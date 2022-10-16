@@ -115,8 +115,12 @@ class java {
 
         String s10 = java.s + "nope";
 
-        char[] cs11 = new char[2];
+        char[] cs11 = new char[5]; // capacity must suffice
         s7.getChars(0, s7.length(), cs11, 0);
+        System.out.println(cs11);
+        s7.getChars(1, 1, cs11, 0); // does not change anything, calue is still the same
+        System.out.println(cs11);
+        s7.getChars(1, 3, cs11, 0); // characters are replaced
         System.out.println(cs11);
 
     }

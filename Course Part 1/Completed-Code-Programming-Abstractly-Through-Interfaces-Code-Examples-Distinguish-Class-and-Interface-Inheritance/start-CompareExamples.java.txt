@@ -1,0 +1,42 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 10: Programming Abstractly Through Interfaces
+Topic: Distinguish class inheritance from interface inheritance
+Sub-Topic: Abstract Class and Interface Comparisons
+*/
+ 
+// We have a global class keeping track of instance counts
+class GlobalInformation {
+    public static int DogCount;
+    public static int CatCount;
+    public static int TreeCount;
+}
+ 
+// This abstract class's sole purpose is to increment counts
+abstract class CounterClass {
+    public abstract void countMyInstances();
+}
+ 
+// Now we want every other class to execute the countMyInstances method
+// Without interfaces, this means extending every entity from the
+// abstract class that enforces subclasses to implement the method
+// Here is an Animal class, also abstract so it does not have to  implement
+// method
+abstract class Animal extends CounterClass {
+    public Animal(String name, String type) {
+        this.name = name;
+        this.type = type;
+        countMyInstances();
+    }
+ 
+    private String name;
+    private String type;
+}
+ 
+// Our main method will create some objects of disparate types
+// and verify that our counters are being incremented.
+public class CompareExamples {
+    public static void main(String[] args) {
+ 
+    }
+}

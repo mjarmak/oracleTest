@@ -1,0 +1,3 @@
+public void goodMethod() throws FileNotFoundException{
+     System.out.println("AND ExtendedClass executing a better method");
+}

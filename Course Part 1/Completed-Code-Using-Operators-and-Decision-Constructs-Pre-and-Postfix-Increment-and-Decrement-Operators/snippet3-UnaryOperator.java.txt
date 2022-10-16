@@ -1,0 +1,17 @@
+System.out.println("----------Test 4 ----------");
+int b = 5;
+int loopiterations = 0;
+while (--b > 0) {  // Use a prefix decrement
+    loopiterations++;
+}
+System.out.println("Prefix decrement operator used, loopiterations = " +
+        loopiterations + ", b = " + b);
+ 
+// Reset values, all things equal except the type of increment operator
+b = 5;
+loopiterations = 0;
+while (b-- > 0) {  // Use a postfix decrement
+    loopiterations++;
+}
+System.out.println("Postfix decrement operator used, loopiterations = " +
+        loopiterations + ", b = " + b);

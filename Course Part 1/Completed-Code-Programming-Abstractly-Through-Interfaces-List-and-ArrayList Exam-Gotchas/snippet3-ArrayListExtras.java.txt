@@ -1,0 +1,18 @@
+// Next, we create a typed List which we'll try to add to our
+// ArrayLists
+List<BaseClass> typedSubList = List.of(new BaseClass("efg"),
+        new BaseClass("fgh"),
+        new BaseClass("hij"));
+ 
+// You can add a collection at an index that is one larger than
+// the # of elements
+typedList.addAll(typedList.size(), typedSubList);
+ 
+// Typed ArrayList catches mistakes at compile time.. Maybe you
+// forgot that set does not mean setAll....
+typedList.set(0, typedSubList);
+rawList.set(0, typedSubList);
+ 
+ 
+System.out.println("typedList = " + typedList);
+System.out.println("rawList = " + rawList);

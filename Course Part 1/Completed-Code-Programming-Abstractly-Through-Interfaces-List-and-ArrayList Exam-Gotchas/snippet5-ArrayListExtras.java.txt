@@ -1,0 +1,8 @@
+// sublist can return a typed List if you specify it.
+List<BaseClass> typedSublist = typedList.subList(0, 2);
+typedSublist.get(0).setName("ABC");
+ 
+// or alternatively sublist returns a rawlist
+List rawSublist = typedList.subList(0, 2);
+// Is it really a raw list?  Test it...
+rawSublist.get(0).setName("ABC");

@@ -1,0 +1,7 @@
+System.out.println("----------  Fourth Test --------------");
+// (number--) == (number += 1)
+// evaluates to true!
+number = 10;
+boolean isEqual = (number--) == (number += 1);
+System.out.println("isEqual = " + isEqual +
+        ", and number = " + number);

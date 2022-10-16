@@ -1,0 +1,8 @@
+// Compare arrays using Arrays.equals
+System.out.println("\n------------- Arrays.equals ------------");
+System.out.println(" (Arrays.equals(firstString,copyOfFirstString)) = "
+        + Arrays.equals(firstString, copyOfFirstString));
+System.out.println(" (Arrays.equals(firstString,firstStringReference)) = "
+        + Arrays.equals(firstString, firstStringReference));
+System.out.println(" (Arrays.equals(firstString,firstStringUnsorted)) = "
+        + Arrays.equals(firstString, firstStringUnsorted));

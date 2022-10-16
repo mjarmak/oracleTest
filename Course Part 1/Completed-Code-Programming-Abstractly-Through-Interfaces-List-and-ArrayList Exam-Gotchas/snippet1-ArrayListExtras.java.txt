@@ -1,0 +1,10 @@
+// You can add an element at an index that is one larger than
+// the # of elements
+typedList.add(typedList.size(), new BaseClass("def"));
+ 
+// You cannot set an element at an index that is one larger than
+// the # of elements
+typedList.set(typedList.size(), new BaseClass("def"));
+ 
+System.out.println("typedList = " + typedList);
+System.out.println("rawList = " + rawList);

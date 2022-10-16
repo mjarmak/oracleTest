@@ -1,0 +1,20 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 3: Working with Java Primitive Data Types and String APIs
+Topic: Create and Manipulate Strings
+Sub-Topic: Searching Text
+*/
+ 
+public class TextSearch {
+    public static void main(String[] args) {
+ 
+        String fullText = "testwordtestwordtestword";
+        //String below is so just there to help see the index easier
+        String showIndx = "012345678901234567890123";
+ 
+        String searchString = "word";
+ 
+        int lastIndex = fullText.lastIndexOf(searchString);
+        System.out.println("lastIndex = " + lastIndex);
+    }
+}

@@ -1,0 +1,4 @@
+// new constructor takes an argument
+FinalFields(String value) {
+    FIVE = "final field FIVE =  " +value;
+}

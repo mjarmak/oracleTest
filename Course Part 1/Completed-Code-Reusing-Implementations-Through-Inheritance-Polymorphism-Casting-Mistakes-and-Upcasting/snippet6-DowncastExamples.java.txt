@@ -1,0 +1,5 @@
+// Downcasting in an expression to access a specific method on a
+// more specific type
+if (((Dog) genericDog).getDogString().equals("dog")) {
+    System.out.println("Matched!");
+}

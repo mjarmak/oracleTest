@@ -1,0 +1,24 @@
+// Now let's look at toArray
+ System.out.println("\n--------  toArray examples ---------");
+ int arrayLength = firstList.size(); // arrayLength changes results
+ 
+ // Set up a new array which we will pass to toArray
+ String[] aArray = new String[arrayLength];
+ 
+ // Calling toArray without assigning returned array to a variable;
+ firstList.toArray(aArray);
+ System.out.println("aArray array  = " + Arrays.toString(aArray));
+ 
+ // Set up another new array which we will pass to toArray
+ String[] bArray = new String[arrayLength];
+ 
+ // Calling toArray assigning returned array to a variable;
+ String[] nextArray = (String[]) firstList.toArray(bArray);
+ System.out.println("bArray array  = "
+         + Arrays.toString(bArray));
+ 
+ System.out.println("nextArray array  = "
+         + Arrays.toString(nextArray));
+ 
+ System.out.println("nextArray.equals(bArray) = "
+         + nextArray.equals(bArray));

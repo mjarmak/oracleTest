@@ -1,0 +1,6 @@
+int modyear = age % 10;
+for (j = 0; j < modyear; j++) {     // VALID, not re-declaring j
+    i++;    // INVALID, no longer in scope
+}
+decadeString += ", Year " + modyear;
+return decadeString;

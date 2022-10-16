@@ -1,0 +1,12 @@
+
+try {
+ 
+} catch (CustomThrowable e) {
+ 
+}
+//----------------------------
+try {
+ 
+} catch (CustomException e) {
+ 
+}

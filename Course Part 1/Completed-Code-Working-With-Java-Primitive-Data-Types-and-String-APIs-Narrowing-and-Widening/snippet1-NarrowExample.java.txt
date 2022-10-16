@@ -1,0 +1,4 @@
+// We will set each variable to its maximum value in its value range
+byte b = 127;
+char c = 65535;
+short s = 32767;

@@ -1,0 +1,5 @@
+// local loop block variable named decade, scope is loop
+ String decade = "Decade " + (age / 10);
+ if (i == (decadeNumber)) {
+     decadeString = decade;
+ }

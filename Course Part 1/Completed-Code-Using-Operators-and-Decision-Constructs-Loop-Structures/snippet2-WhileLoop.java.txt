@@ -1,0 +1,6 @@
+
+while (keepGoing) {
+    if (++iterations > 2) break;
+    if (iterations == 2) continue;
+    System.out.println("Iteration: " + iterations +
+            ", keepGoing = " + keepGoing);

@@ -1,0 +1,5 @@
+// Let's add the StringBuilder object to raw list
+rawList.add(new StringBuilder("Hello"));
+ 
+// Let's add the StringBuilder object to typed list
+baseList.add(new StringBuilder("Hello"));

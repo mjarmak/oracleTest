@@ -1,0 +1,5 @@
+// A single-static-import declaration for static variable
+import static java.lang.Math.PI;
+
+// A single-static-import declaration for static method
+import static java.lang.Math.sqrt;

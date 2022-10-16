@@ -1,0 +1,23 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 4: Using Operators and Decision Constructs
+Topic: Loops
+Sub-Topic: While and Do/While Loops
+*/
+ 
+public class WhileLoop {
+    public static void main(String[] args) {
+ 
+        // set up a boolean that while be the condition for our while loop
+        boolean keepGoing = true;
+        int iterations = 0;
+ 
+        while (keepGoing) {
+ 
+            if (++iterations > 2) keepGoing = false;
+            System.out.println("Iteration: " + iterations +
+                    ", keepGoing = " + keepGoing);
+ 
+        }  // end while
+    }
+}

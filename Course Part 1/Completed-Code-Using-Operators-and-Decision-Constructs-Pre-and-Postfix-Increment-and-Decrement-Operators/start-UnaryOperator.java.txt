@@ -1,0 +1,23 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 4: Using Operators and Decision Constructs
+Topic: Operators
+Sub-Topic: Unary Operators
+*/
+ 
+public class UnaryOperator {
+    public static void main(String[] args) {
+        System.out.println("----------Test 1 ----------");
+        int a = 0;
+        // If you do no assignment and the operator is not participating
+        // in a more complex expression the following statements are the
+        // same.  the value in variable a gets incremented by 1
+        a = 1;
+        ++a;  // a = a+1
+        System.out.println("a after ++a = " + a);
+        a = 1;
+        a++;  // a = a+1
+        System.out.println("a after a++ = " + a);
+ 
+    }
+}

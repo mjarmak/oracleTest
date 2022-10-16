@@ -1,0 +1,4 @@
+LevelTwoClass() {
+    System.out.println("protected LevelTwoClass " +
+            "no args constructor");
+}

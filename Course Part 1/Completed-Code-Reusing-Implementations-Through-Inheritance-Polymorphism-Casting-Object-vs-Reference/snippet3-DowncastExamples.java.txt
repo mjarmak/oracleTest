@@ -1,0 +1,8 @@
+public static void main(String[] args) {
+    DowncastExamples dex = new DowncastExamples();
+    Animal genericDog = new Dog();
+    Animal genericCat = new Cat();
+ 
+    // Adding mixed-up declarations..
+    Dog specificDog = new Cat();
+    Cat specificCat = new Dog();

@@ -1,0 +1,4 @@
+try {
+    System.out.println("Statement 2 will cause the error " + (2 / 0));
+} catch (RuntimeException re) {
+}

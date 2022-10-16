@@ -1,0 +1,14 @@
+// Compare arrays using Arrays.compare
+System.out.println("\n------------- Arrays.compare ------------");
+System.out.println(" (Arrays.compare(firstString,copyOfFirstString)) = "
+        + Arrays.compare(firstString, copyOfFirstString));
+System.out.println(" (Arrays.compare(firstString,firstStringReference)) = " +
+        "" + Arrays.compare(firstString, firstStringReference));
+System.out.println(" (Arrays.compare(firstString,firstStringUnsorted)) = "
+        + Arrays.compare(firstString, firstStringUnsorted));
+System.out.println(" (Arrays.compare(firstStringUnsorted,firstString)) = "
+        + Arrays.compare(firstStringUnsorted, firstString));
+System.out.println(" (Arrays.compare(firstString,partialFirstString)) = "
+        + Arrays.compare(firstString, partialFirstString));
+System.out.println(" (Arrays.compare(partialFirstString,firstString)) = "
+        + Arrays.compare(partialFirstString, firstString));

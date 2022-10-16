@@ -1,0 +1,6 @@
+// class Farce will be both a Story and Laughable
+class Farce extends Story implements Laughable {
+    public void laugh() {
+        System.out.println("This story is funny in a farcical way");
+    }
+}

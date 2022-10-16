@@ -1,0 +1,19 @@
+// These methods are private because we declared them private.
+private String privateMethod() {
+    return "private";
+}
+ 
+private static String privateStaticMethod() {
+    return "private static";
+}
+ 
+// These methods are public implicitly
+default String defaultMethod() {
+    // You can call private method from a default method
+    return privateMethod() + " then default";
+}
+ 
+static String publicStaticMethod() {
+    // You can call private static method from public static method
+    return InterfaceExample.privateStaticMethod() + " then static";
+}

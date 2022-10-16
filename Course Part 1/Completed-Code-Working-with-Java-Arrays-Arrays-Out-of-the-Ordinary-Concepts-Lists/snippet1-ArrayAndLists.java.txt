@@ -1,0 +1,12 @@
+System.out.println("\n--------  subList example ---------");
+List subList = Arrays.asList(firstString).subList(0, 5);
+System.out.println("subList = " + subList.toString());
+ 
+// Sort the sublist
+subList.sort(Collections.reverseOrder());
+System.out.println("subList after reverse = "
+        + subList.toString());
+ 
+System.out.println("firstString array  = "
+        + Arrays.toString(firstString));
+System.out.println("firstList = " + firstList.toString());

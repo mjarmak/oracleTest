@@ -1,0 +1,7 @@
+} catch (ACustomRuntimeException are) {
+ 
+    System.out.println("In the catch clause for" +
+            " ACustomRuntimeException in main(): " +
+            are);
+ 
+}

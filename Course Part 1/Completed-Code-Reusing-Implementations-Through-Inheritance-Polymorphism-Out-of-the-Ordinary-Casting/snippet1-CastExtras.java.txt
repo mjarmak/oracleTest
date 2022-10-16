@@ -1,0 +1,19 @@
+// We are going to loop through our array and cast each
+// object first to a NextClass to print the name attribute on
+// NextClass, and then we cast to BaseClass to print the
+// name attribute on the BaseClass
+try {
+    for (Object o : myObjectArray) {
+        // We can cast to most specific class
+        NextClass n = (NextClass) o;
+        System.out.println(n.name);
+ 
+        // We can cast to less specific class if we prefer more
+        // generic name
+        BaseClass b = (BaseClass) o;
+        System.out.println(b.name);
+    }
+} catch (Exception e) {
+    // Not to mention any object might be in your array...
+    e.printStackTrace(System.out);
+}

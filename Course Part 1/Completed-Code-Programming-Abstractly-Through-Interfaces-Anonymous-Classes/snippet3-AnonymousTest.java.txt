@@ -1,0 +1,3 @@
+public void printHello(Helloable h) {
+    h.hello();
+}

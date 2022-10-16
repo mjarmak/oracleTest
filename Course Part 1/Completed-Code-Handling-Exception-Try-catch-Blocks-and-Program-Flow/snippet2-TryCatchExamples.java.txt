@@ -1,0 +1,6 @@
+private void printThreeStatements(String section, int divisor) {
+    System.out.println(section + ": Statement 1 is just fine");
+    System.out.println(section + ": Statement 2 will cause the error " +
+            (2 / divisor));
+    System.out.println(section + ": Statement 3 is just fine");
+}

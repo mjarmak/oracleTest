@@ -1,0 +1,5 @@
+// Add some 'work' first to prove StaticStuff not initialized
+    // on start-up
+    for (int i = 0; i < 3; i++) {
+        System.out.println("Printing " + (i));
+    }

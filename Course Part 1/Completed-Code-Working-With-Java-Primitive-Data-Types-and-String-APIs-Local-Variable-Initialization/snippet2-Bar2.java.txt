@@ -1,0 +1,9 @@
+//  Initialize our variables
+mainByte = 0;
+mainChar = 'a';
+mainShort = 1;
+mainInt = 2;
+mainLong = 3L;
+mainFloat = 1.0f;
+mainDouble = 2.0d;
+mainBoolean = false;

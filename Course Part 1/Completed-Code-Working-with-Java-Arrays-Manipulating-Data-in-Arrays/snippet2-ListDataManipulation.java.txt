@@ -1,0 +1,13 @@
+// secondColorList created from List.of method is immutable
+try {
+    secondColorList.set(0, "cyan");
+} catch (Exception e) {
+    e.printStackTrace();
+}
+ 
+// thirdColorList created from List.copyOf method is also immutable
+try {
+    thirdColorList.set(0, "cyan");
+} catch (Exception e) {
+    e.printStackTrace();
+}

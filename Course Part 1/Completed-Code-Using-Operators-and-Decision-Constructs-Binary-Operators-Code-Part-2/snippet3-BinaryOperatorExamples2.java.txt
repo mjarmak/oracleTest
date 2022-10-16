@@ -1,0 +1,9 @@
+// This code results in an overflow
+byte testByte = 127;
+testByte += 1;
+System.out.println("testByte = " + testByte);
+ 
+// This code results in a compiler error
+byte testByte2 = 127;
+testByte2 = testByte2 + 1;
+System.out.println("testByte2 = " + testByte2);

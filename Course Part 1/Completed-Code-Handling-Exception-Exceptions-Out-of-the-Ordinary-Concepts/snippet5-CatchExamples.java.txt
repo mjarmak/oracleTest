@@ -1,0 +1,1 @@
+    e = new CustomException("So many exceptions, so little time");

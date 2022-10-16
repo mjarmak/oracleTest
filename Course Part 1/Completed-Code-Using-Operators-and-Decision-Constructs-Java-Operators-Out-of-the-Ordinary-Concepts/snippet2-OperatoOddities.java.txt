@@ -1,0 +1,3 @@
+short short1 = 2;
+var result = byte1 + short1;
+System.out.println("result" + TestVar(result));

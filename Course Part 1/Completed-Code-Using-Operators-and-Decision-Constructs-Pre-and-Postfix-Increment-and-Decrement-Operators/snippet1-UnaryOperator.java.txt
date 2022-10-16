@@ -1,0 +1,7 @@
+// What happens if we do this?
+System.out.println("----------Test 2 ----------");
+a = 1;
+System.out.println("a after ++a = " + ++a);
+a = 1;
+System.out.println("a after a++ = " + a++);
+System.out.println("And now the value of a is: " + a);

@@ -1,0 +1,6 @@
+System.out.println("----------  Final Test --------------");
+// number = number--;
+// value in number stays unchanged
+number = 10;
+number = number--;
+System.out.println("number = " + number);

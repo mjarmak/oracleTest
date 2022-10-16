@@ -1,0 +1,3 @@
+UnaryIntegerOperation decrement = a -> {
+    a - 1;
+};

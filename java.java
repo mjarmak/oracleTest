@@ -51,6 +51,18 @@ class java {
         short s5 = 1;
         var k = + s5; //promotes to int
         var test = 1 + s5; //promotes to int
+
+        var i5 = 1;
+//        i5 = 0.05F; // needs manual casting
+
+        var i6 = 1;
+//        i6 = 1L; // needs manual casting
+
+        Object person1 = new Person();
+        Person person2 = new Person();
+        person1 += "nope";
+//        person2 += "nope"; // error, only works on Object
+        System.out.println(person1); // acutally concatenated
     }
 
     public static String solution(String S) {

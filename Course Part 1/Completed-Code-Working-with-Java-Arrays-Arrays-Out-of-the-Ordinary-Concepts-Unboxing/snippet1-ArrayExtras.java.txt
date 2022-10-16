@@ -1,0 +1,5 @@
+
+int[] intArray = {0, 1, 2, 3, 4};
+int misMatchedIndex = Arrays.mismatch(intArray, integerArray);
+boolean theSame = Arrays.equals(intArray, integerArray);
+int compared = Arrays.compare(intArray, integerArray);

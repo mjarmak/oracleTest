@@ -1,0 +1,15 @@
+class SuperClass {
+    public void methodSuperClass() throws CustomException {
+ 
+    }
+}
+ 
+class SubClass extends SuperClass {
+    public void methodSubClass() {
+        try {
+            methodSuperClass();
+        } catch (Exception CustomException) {
+            // ignore it
+        }
+    }
+}

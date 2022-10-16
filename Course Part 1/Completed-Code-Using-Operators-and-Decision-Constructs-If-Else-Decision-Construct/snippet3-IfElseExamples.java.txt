@@ -1,0 +1,7 @@
+//The following code tests precedence/assignment inside an if/else statement
+boolean a = false;
+boolean b = false;
+boolean c = false;
+ 
+if ((a = true) || (b = true) && (c = true)) ;
+System.out.println(a + " " + b + " " + c);

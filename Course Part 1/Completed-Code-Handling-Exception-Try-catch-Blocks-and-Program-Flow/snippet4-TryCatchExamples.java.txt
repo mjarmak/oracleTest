@@ -1,0 +1,13 @@
+try {
+    FileInputStream f =
+            new FileInputStream("ApplicationProperties.txt");
+}
+catch (IOException ie) {
+    System.out.println("Maybe I want to do something specifically, like" +
+            " populate data as a default if file was properties file "+
+            (5/0));
+}
+catch (Throwable t) {
+    t.printStackTrace(System.out);
+    printErrorStructure(t);
+}

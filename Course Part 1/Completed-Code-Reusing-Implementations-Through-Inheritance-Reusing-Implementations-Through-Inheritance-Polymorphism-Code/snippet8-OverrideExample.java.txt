@@ -1,0 +1,3 @@
+public void goodMethod() throws IOException {
+    System.out.println("BaseClass executing good method");
+}

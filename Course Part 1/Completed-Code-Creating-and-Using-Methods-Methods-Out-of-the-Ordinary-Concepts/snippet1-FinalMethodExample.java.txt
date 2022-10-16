@@ -1,0 +1,3 @@
+public void doZOnlyOneWay() {
+    System.out.println("Implement Z my way");
+}

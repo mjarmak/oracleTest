@@ -1,0 +1,64 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 10: Programming Abstractly Through Interfaces
+Topic: Declare and Use List and ArrayList instances;
+Sub-Topic:  ArrayList review
+*/
+ 
+import java.util.ArrayList;
+ 
+public class ArrayListExtras {
+    public static class BaseClass {
+        private String name;
+ 
+        BaseClass(String name) {
+            this.name = name;
+        }
+ 
+        public String toString() {
+            return name;
+        }
+ 
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
+ 
+    public static void main(String[] args) {
+ 
+        ArrayList<BaseClass> typedList = new ArrayList<>();
+ 
+        ArrayList rawList = new ArrayList();
+ 
+        // add without an index, adds element to end of list
+        typedList.add(new BaseClass("abc"));
+ 
+        // add with an index, adds element at the index
+        typedList.add(0, new BaseClass("bcd"));
+        typedList.add(0, new BaseClass("cde"));
+ 
+        // Add elements to rawList, note that we can access all
+        // elements in typedList as a BaseClass
+        for (BaseClass b : typedList) {
+            // We'll make copies of the BaseClass objects and add
+            rawList.add(0, new BaseClass(b.toString()));
+        }
+        System.out.println("typedList = " + typedList);
+        System.out.println("rawList = " + rawList);
+ 
+        // Can do this in a typed list without casting.
+        // setName() is method on BaseClass
+        typedList.get(2).setName("ccc");
+ 
+        // Trying same thing on object from raw ArrayList is a bit uglier
+        ((BaseClass) (rawList.get(0))).setName("aaa");
+ 
+        // You can add an element at an index that is one larger than
+        // the # of elements
+        typedList.add(typedList.size(), new BaseClass("def"));
+ 
+        System.out.println("typedList = " + typedList);
+        System.out.println("rawList = " + rawList);
+ 
+    }
+}

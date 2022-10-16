@@ -1,0 +1,30 @@
+// Relationship operators <, <=
+// | - logical or
+// || - conditional logical or
+System.out.println("\nResults using relationship operators" +
+        " and logical or operators (| ||) ");
+e = 0;
+f = 0;
+if ((e++ <= f) | (++e < f)) {
+    System.out.println("Evaluation [(e++ <= f) | (++e < f)] met");
+}
+System.out.println("Logical | (OR) will evaluate both expressions: e = "
+        + e + ", and f = " + f);
+ 
+e = 0;
+f = 0;
+if ((e++ <= f) || (++e < f)) {
+    System.out.println("Evaluation [(e++ <= f) || (++e < f)] met");
+}
+System.out.println("Conditional Logical || evaluates only first " +
+        "expression if it evaluates to true: e = "
+        + e + ", and f = " + f);
+ 
+e = 0;
+f = 0;
+if ((e++ < f) || (++e <= f)) {
+    System.out.println("Evaluation [(e++ <= f) || (++e < f)] met");
+}
+System.out.println("Conditional Logical || (OR) will evaluate" +
+        " both expressions ONLY if first expression is false : e = "
+        + e + ", and f = " + f);

@@ -1,0 +1,11 @@
+public void extend() {
+ 
+    // You can call the interface's default method
+    // from the concrete method you create.
+    defaultMethod();
+    append();
+}
+ 
+public void append() {
+    System.out.println("Appending functionality ");
+}

@@ -1,0 +1,4 @@
+// default method override
+public void teachTheseLessons() {
+    System.out.println("Everyone should learn math and science");
+}

@@ -1,0 +1,6 @@
+String resultStringCorrectedForIntegerMath = i + j + " = " + (i + j);
+String resultStringCorrectedForStringConcat = "" + i + j + " = " + i + j;
+System.out.println("resultStringCorrectedForIntegerMath is: " +
+        resultStringCorrectedForIntegerMath);
+System.out.println("resultStringCorrectedForStringConcat is: " +
+        resultStringCorrectedForStringConcat);

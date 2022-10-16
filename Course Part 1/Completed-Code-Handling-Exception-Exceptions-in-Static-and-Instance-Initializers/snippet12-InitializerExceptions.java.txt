@@ -1,0 +1,3 @@
+SubClass() throws Exception {
+       super();  // Note that call to super() is redundant statement
+}

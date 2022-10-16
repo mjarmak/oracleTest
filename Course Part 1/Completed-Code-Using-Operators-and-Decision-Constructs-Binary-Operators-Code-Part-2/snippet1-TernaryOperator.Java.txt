@@ -1,0 +1,6 @@
+
+// Example 2
+// Value returned from ternary operation is primitive data
+boolean b = true;
+int result = (b && (hasArguments && args[0].equals("10"))) ? 10 : 0;
+System.out.println("Result of Example 2 = " + result);

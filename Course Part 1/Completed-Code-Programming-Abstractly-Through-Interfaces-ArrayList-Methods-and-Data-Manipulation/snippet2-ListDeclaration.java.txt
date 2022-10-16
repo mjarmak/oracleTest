@@ -1,0 +1,28 @@
+// add some data
+for (int i = 0; i < 5; i++) {
+    // adds data at end of list...
+    stringArray.add("String_" + (i + 1));
+    integerArray.add(i + 1);
+}
+System.out.println(stringArray);
+System.out.println(integerArray);
+ 
+// add some data at certain index
+for (int i = 0; i < 5; i++) {
+    // adds data at end of list...
+    stringArray.add(1, "String_" + (i + 1));
+    integerArray.add(1, i + 1);
+}
+System.out.println(stringArray);
+System.out.println(integerArray);
+ 
+// addAll adds a collection of data, this call appends data to
+// end of list
+integerArray.addAll(List.of(15, 25, 30));
+System.out.println(integerArray);
+ 
+// addAll adds a collection of data, this call inserts all
+// elements of the list starting at the index, moving existing
+// elements to a higher index location
+integerArray.addAll(1, List.of(150, 250, 300));
+System.out.println(integerArray);

@@ -1,0 +1,5 @@
+// Hiding static variable with instance variable
+System.out.println("Call from Branch: Number of Branches = " +
+        b.branchCount);
+System.out.println("Call from Branch: Number of Employees = " +
+        b.employeeCount);

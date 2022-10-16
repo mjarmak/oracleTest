@@ -1,0 +1,7 @@
+// This lambda expression demonstrates a single untyped parameter
+// without using parentheses, but our body is wrapped in brackets
+// and we use a return statement
+//-- This operation will result in the value being decremented by 1.
+UnaryIntegerOperation decrement = a -> {
+    return a - 1;
+};

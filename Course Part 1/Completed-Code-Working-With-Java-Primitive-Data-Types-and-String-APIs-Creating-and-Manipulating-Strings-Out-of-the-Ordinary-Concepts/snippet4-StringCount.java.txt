@@ -1,0 +1,17 @@
+// compiler calculates this expression to the constant "abc:def" so only one
+// string is created at runtime on this line
+String s1 = "abc" + ":" + "def";
+ 
+// set up some more strings for next example..
+String s2 = "s2";
+String s3 = "s3";
+String s4 = "s4";
+ 
+// The following statement creates 3 string objects
+// object1 = s2 + s1
+//         object2 = s3 + object1
+//                object3 = s4 + object2
+// If you rewrite this as s5 = (((s4 + s3) + s2) + s1)
+// it might be easier to count the number of objects created
+// by counting left parentheses groupings
+String s5 = s4 + s3 + s2 + s1;

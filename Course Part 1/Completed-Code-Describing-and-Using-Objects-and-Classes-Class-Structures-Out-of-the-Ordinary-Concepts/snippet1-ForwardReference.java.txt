@@ -1,0 +1,15 @@
+// Constructor
+Thing() {
+    secondString = "b" + thirdString;
+}
+ 
+// Initializer
+{
+    firstString = "a" + thirdString;
+}
+ 
+// Static Initializer
+static {
+    System.out.println(thirdString);
+    thirdString = "c";
+}

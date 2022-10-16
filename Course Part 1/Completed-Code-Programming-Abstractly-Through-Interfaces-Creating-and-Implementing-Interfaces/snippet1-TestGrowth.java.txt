@@ -1,0 +1,37 @@
+public static void main(String[] args) {
+    // Create some objects.  It could be argued these
+    // objects do not have a lot in common.
+    IceCooler ic = new IceCooler();
+    SuitCase sc = new SuitCase();
+    Portfolio p = new Portfolio();
+ 
+    // We can set up arrays using interface types..
+    Expandable[] eList = {p, sc};
+    Collapsible[] cList = {p, ic};
+ 
+    // We'll loop through Expandable array using enhanced for loop
+    System.out.println(".... Test the Expandable Objects....");
+    for (Expandable e : eList) {
+        TestExpand(e);
+    }
+ 
+    // We'll loop through Collapsible array using enhanced for loop
+    System.out.println("\n.... Test the Collapsible Objects....");
+    for (Collapsible c : cList) {
+        TestCollapse(c);
+    }
+ 
+}
+ 
+// Test method that defines a parameter as Expandable
+public static void TestExpand(Expandable e) {
+    System.out.println(e.getClass().getName());
+    e.expand();
+}
+ 
+// Test method that defines a parameter as Collapsible
+public static void TestCollapse(Collapsible c) {
+    System.out.println(c.getClass().getName());
+    c.getClass().getName();
+    c.collapse();
+}

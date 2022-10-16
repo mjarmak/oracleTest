@@ -1,0 +1,16 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 4: Using Operators and Decision Constructs
+Topic: Operators
+Sub-Topic: Ternary Operator
+*/
+ 
+public class TernaryOperator {
+    public static void main(String[] args) {
+ 
+        // Example 1
+        // The value returned from this ternary operation is a boolean.
+        boolean hasArguments = (args.length == 0) ? false : true;
+        System.out.println("Result of Example 1 = " + hasArguments);
+    }
+}

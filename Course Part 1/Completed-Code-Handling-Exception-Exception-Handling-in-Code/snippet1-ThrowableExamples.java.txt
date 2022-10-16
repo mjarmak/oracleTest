@@ -1,0 +1,4 @@
+// Mocking an IOError ...
+private void throwAnError() throws IOError {
+    throw new IOError(new Throwable("Testing"));
+}

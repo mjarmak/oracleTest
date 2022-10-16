@@ -1,0 +1,9 @@
+// Let's change original list's values, and insert a null
+for (int i = 0; i < 10; i++) {
+    if (i != 5) originalList.set(i, "TEST_" + (i + 10));
+    else originalList.set(i, null);
+}
+System.out.println(originalList);
+ 
+// Let's try making a fresh copy
+copiedList = List.copyOf(originalList);

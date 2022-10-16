@@ -1,0 +1,5 @@
+public int baseMethod(int[] intArray) throws Exception {
+    System.out.println("- CHILD OVERRODE 'int baseMethod(int[] intArray)'");
+    return intArray[intArray.length - 1];
+ 
+}

@@ -1,0 +1,39 @@
+System.out.println("\nScenario 2:  Parameter is reference variable" +
+         " for Integer[10], elements all populated");
+ // Scenario 2: array.length > list.size();
+ //             and array elements initialized (not null)
+ // the method toArray([]<T>) populates passed array with as many
+ // elements as list contains, and has one other, maybe unexpected
+ // behavioral twist - it sets the element at list.size() to null,
+ // leaving all other elements at indices > list.size() as they were.
+ aIntArray = new Integer[]{1,2,3,4,5,6,7,8,9,10};
+ Integer[] cInt = intList.toArray(aIntArray);
+ System.out.println("Result type from ArrayList<Integer> " +
+         "assigned to Integer[] = " +
+         cInt.getClass().getTypeName());
+ System.out.println("--- Resulting array elements = " +
+         Arrays.toString(cInt));
+ 
+ // No casting required.
+ testValue = cInt[0];
+ System.out.println("--- No cast required at individual level:" +
+         " the first element is " + testValue);
+ 
+ // Reset the array we use as a parameter between tests, so
+ // tests between raw ArrayList and generic ArrayList are same
+ aIntArray = new Integer[]{1,2,3,4,5,6,7,8,9,10};
+ 
+ // A raw ArrayList will still return array passed, in
+ // this case aIntArray reference, but to assign it to an
+ // Integer[] array we must cast.
+ Integer[] cRaw = (Integer[]) rawList.toArray(aIntArray);
+ System.out.println("Result type from ArrayList assigned to  Integer[] " +
+         " required casting = " + cRaw.getClass().getTypeName());
+ System.out.println("--- Resulting array elements = " +
+         Arrays.toString(cRaw));
+ 
+ // No Casting required.
+ testValue = cRaw[0];
+ System.out.println("--- No Cast required at individual level since" +
+         " we cast entire array to (Integer[]) : the first element is "
+         + testValue);

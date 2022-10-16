@@ -1,0 +1,16 @@
+public class StaticElementTests {
+    public static void main(String[] args) {
+ 
+        // Add some 'work' first to prove StaticStuff not initialized
+        // on start-up
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Printing " + (i));
+        }
+ 
+        //** Create an object of type StaticStuff.
+        StaticStuff s = null;
+ 
+        // Execute static method on StaticStuff
+        s.printAppName();
+    }
+}

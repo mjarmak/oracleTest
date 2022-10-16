@@ -1,0 +1,12 @@
+try {
+    SubClass c = new SubClass();
+    c.methodSuperClass();
+    ce.testError();
+ 
+} catch (ArithmeticException e) {
+    e = new ArithmeticException("This works");
+    throw e;
+}
+catch (CustomException | RuntimeException | IOException e) {
+    throw new RuntimeException("So many exceptions, so little time");
+}

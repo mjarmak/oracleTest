@@ -1,0 +1,17 @@
+// Simple setter for age
+public void setAge(String age) {
+    // method sets instance variable age to the parameter passed.
+    this.age = age;
+}
+ 
+// Simple setter for instanceName
+public void setInstanceName(String instanceName) {
+    this.instanceName = instanceName;
+}
+ 
+public String toString() {
+    // instance and class variable names have scope within all
+    // non-static methods of the enclosing class, no qualifier
+    // required.   Qualifiers do help readability though
+    return instanceName + " is " + age + " years old (PERSON.name=" + name + ")";
+}

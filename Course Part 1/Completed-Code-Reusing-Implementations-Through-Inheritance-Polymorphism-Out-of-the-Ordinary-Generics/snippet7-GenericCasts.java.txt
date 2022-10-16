@@ -1,0 +1,16 @@
+// No cast required, retrieving data from ArrayList, typed with
+// NextClass
+NextClass next = nextList.get(0);
+System.out.println("next here is " + next);
+ 
+// No cast required, retrieving data from ArrayList, typed with
+// BaseClass
+BaseClass base = baseList.get(0);
+System.out.println("base here is " + base);
+// need a cast still if retrieving more specifically typed object
+next = (NextClass) baseList.get(0);
+System.out.println("next here is " + next);
+ 
+// Cast required, retrieving data from raw ArrayList
+next = (NextClass) rawList.get(0);
+System.out.println("next here is " + next);

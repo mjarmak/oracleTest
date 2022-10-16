@@ -1,0 +1,7 @@
+
+// Overload baseMethod in the child class..
+public Object baseMethod(String[] s) {
+    System.out.println("- CHILD OVERLOADED " +
+            " 'Object baseMethod(String[] s)'");
+    return Arrays.toString(s);
+}

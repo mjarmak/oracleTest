@@ -1,0 +1,4 @@
+// Create a String from the character array
+  int offset = 1;
+  String charString2 = new String(alphabet, offset, alphabet_len);
+  System.out.println("charString2 = " + charString2);

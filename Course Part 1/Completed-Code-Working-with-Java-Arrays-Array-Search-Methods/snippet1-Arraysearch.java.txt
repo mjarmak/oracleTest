@@ -1,0 +1,9 @@
+System.out.println("\n---------- Arrays mismatch  ----------");
+// mismatch returns the non-matching index where the prefix ends
+System.out.println("Arrays.mismatch(firstString,partialFirstString) = "
+        + Arrays.mismatch(firstString, partialFirstString));
+ 
+// Try another example...
+System.out.println("Arrays.mismatch(firstStringUnsortedDuplicates," +
+        " new String[]{\"jkl\",\"mno\"}) = "
+        + Arrays.mismatch(firstStringUnsortedDuplicates, new String[]{"jkl", "mno"}));

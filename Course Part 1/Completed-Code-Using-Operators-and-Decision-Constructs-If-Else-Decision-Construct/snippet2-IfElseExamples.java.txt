@@ -1,0 +1,5 @@
+// Very common mistake...
+flag = false;
+if (flag = true) {
+    System.out.println("5. flag is true");
+} else System.out.println("5. flag is false");

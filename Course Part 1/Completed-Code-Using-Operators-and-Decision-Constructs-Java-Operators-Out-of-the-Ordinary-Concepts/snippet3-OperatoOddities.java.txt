@@ -1,0 +1,3 @@
+long long1 = 10L;
+var result2 = long1 + (1.0);
+System.out.println("result2" + TestVar(result2));

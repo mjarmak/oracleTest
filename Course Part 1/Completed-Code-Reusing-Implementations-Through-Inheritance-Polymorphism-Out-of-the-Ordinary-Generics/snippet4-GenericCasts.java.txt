@@ -1,0 +1,8 @@
+// Execute testIt method with List<BaseClass>
+testIt(bList);
+ 
+// Execute testIt method with ArrayList<BaseClass>
+testIt(baseList);
+ 
+// Execute testIt method with ArrayList<NextClass>
+testIt(nextList);

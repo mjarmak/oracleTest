@@ -1,0 +1,4 @@
+// Constructor declares IOException in a throws clause
+InitializerExceptions() throws IOException {
+ 
+}

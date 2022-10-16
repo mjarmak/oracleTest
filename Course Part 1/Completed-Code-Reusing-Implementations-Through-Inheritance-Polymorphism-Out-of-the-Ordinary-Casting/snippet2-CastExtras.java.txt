@@ -1,0 +1,16 @@
+// Next we'll create an array of mixed types, using the common
+// denominator BaseClass
+BaseClass mixedArray[] = new BaseClass[6];
+// Fill half with NextClass
+Arrays.fill(mixedArray,0, 3, new NextClass());
+// Fill half with BaseClass
+Arrays.fill(mixedArray,3, 6, new BaseClass());
+ 
+System.out.println(Arrays.toString(mixedArray));
+for (BaseClass n : mixedArray) {
+    // We cast if we want NextClass's more specific name...
+    System.out.println(n + ":" +
+            // ternary conditional operator uses instanceof
+            ((n instanceof NextClass) ? ((NextClass) n).name : n.name)
+    );
+}

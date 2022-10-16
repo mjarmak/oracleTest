@@ -1,0 +1,2 @@
+var negativeByte = -byte1;
+System.out.println("negativeByte" + TestVar(negativeByte));

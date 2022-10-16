@@ -1,0 +1,22 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 9: Reusing Implementations Through Inheritance
+Topic: Enable Polymorphism by overriding methods.
+*/
+ 
+class BaseClass {
+    public void goodMethod() {
+        System.out.println("BaseClass executing good method");
+    }
+}
+ 
+class ExtendedClass extends BaseClass {
+ 
+}
+ 
+public class OverrideExample {
+    public static void main(String[] args) {
+        ExtendedClass e = new ExtendedClass();
+        e.goodMethod();
+    }
+}

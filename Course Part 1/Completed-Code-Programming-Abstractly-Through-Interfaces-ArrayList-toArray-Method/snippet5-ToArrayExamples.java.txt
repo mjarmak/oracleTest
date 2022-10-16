@@ -1,0 +1,31 @@
+System.out.println("\nScenario 5:  Array passed is now Number[] and not a reference variable");
+// Scenario 5: array.length < list.size();
+//             and no reference to array passed
+// the method toArray() populates a newly instantiated
+// array of the same type as the parameter passed,
+// and the size of the list itself, not the parameter passed
+ 
+var fInt = intList.toArray(new Number[0]);
+System.out.println("Result type from ArrayList<Integer> " +
+        "assigned to var = " +
+        fInt.getClass().getTypeName());
+System.out.println("--- Resulting array elements = " +
+        Arrays.toString(fInt));
+ 
+// casting required.
+testValue = (int) fInt[0];
+System.out.println("--- Cast required at individual level:" +
+        " the first element is " + testValue);
+ 
+// A raw ArrayList will still return a Number[] array
+ 
+var fRaw = rawList.toArray(new Number[0]);
+System.out.println("Result type from ArrayList assigned to var = " +
+        fRaw.getClass().getTypeName());
+System.out.println("--- Resulting array elements = " +
+        Arrays.toString(fRaw));
+ 
+// Casting required.
+testValue = (int) fRaw[0];
+System.out.println("--- Cast required at individual level: the " +
+        "first element is " + testValue);

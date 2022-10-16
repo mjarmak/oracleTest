@@ -1,0 +1,18 @@
+Dog d;
+Cat c;
+Tree t;
+for (int i = 0; i < 5; i++) {
+    d = new Dog("DOG_" + (i + 1), "dog");
+}
+for (int i = 0; i < 7; i++) {
+    c = new Cat("CAT_" + (i + 1), "cat");
+}
+for (int i = 0; i < 3; i++) {
+    t = new Tree();
+}
+System.out.println("Number of Cat instances = "
+        + GlobalInformation.CatCount);
+System.out.println("Number of Dog instances = "
+        + GlobalInformation.DogCount);
+System.out.println("Number of Tree instances = "
+        + GlobalInformation.TreeCount);

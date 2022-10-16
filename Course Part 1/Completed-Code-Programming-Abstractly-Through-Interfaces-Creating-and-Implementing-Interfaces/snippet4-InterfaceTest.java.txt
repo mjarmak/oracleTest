@@ -1,0 +1,23 @@
+public void theImportantMethod() {
+    System.out.println("This is the important method that all objects " +
+            "implementing InterfaceTest must override and implement ");
+}
+ 
+// Method that accepts the interface as a parameter
+public void testInterface(InterfaceExample it) {
+    System.out.println("Executing testInterface with InterfaceExample");
+    it.theImportantMethod();
+}
+ 
+// Method that accepts on object as a parameter
+public void testInterface(Object o) {
+    System.out.println("Executing testInterface with Object");
+    // Using instanceof with an interface
+    if (o instanceof InterfaceExample) {
+ 
+        // Casting using an interface
+        InterfaceExample it = (InterfaceExample) o;
+        it.theImportantMethod();
+    }
+ 
+}

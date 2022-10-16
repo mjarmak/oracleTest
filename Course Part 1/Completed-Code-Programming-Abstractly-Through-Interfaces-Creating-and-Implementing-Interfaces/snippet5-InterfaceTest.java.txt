@@ -1,0 +1,6 @@
+System.out.println("\nExecuting methods using the interface type");
+InterfaceTest anotherIt = new InterfaceTest();
+it.testInterface(anotherIt);
+ 
+Object o = anotherIt;
+it.testInterface(o);

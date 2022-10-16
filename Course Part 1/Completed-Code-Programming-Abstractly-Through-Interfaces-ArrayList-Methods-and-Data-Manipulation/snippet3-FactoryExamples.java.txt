@@ -1,0 +1,14 @@
+// Create some test data
+String[] stringArray = {"ABC", "DEF", "GHI", "JKL", "MNO", "PQR", "STU"};
+ 
+// List.of can accept an array..
+copiedList = List.<String>of(stringArray);
+System.out.println(copiedList);
+ 
+// List.of can accept a variable list of elements
+copiedList = List.<String>of("ABC", "DEF", "GHI", "JKL", "MNO");
+System.out.println(copiedList);
+ 
+// List.of can be called with no parameter at all
+copiedList = List.<String>of();
+System.out.println(copiedList);

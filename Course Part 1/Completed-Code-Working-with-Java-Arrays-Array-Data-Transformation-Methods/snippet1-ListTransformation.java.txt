@@ -1,0 +1,21 @@
+System.out.println("------  iterator tests --------");
+// Iterator allows forward processing of list elements
+System.out.println("loop through anotherList.iterator() values...");
+for (Iterator it = anotherList.iterator(); it.hasNext(); ) {
+    System.out.print(it.next());
+}
+ 
+// ListIterator allows backwards and forwards processing
+// of list elements
+System.out.println("\nloop through anotherList.listIterator() values...");
+ListIterator lit = anotherList.listIterator();
+ 
+for (int i = 0; lit.hasNext(); i++) {
+    System.out.print(lit.next());
+    if (i == 4) {
+        System.out.println("\nreverse direction");
+        for (; lit.hasPrevious(); ) {
+            System.out.print(lit.previous());
+        }
+        break;
+    }

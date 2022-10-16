@@ -1,0 +1,6 @@
+do {
+ 
+    System.out.println("--- Doing something in the nested loop," +
+            " iterations =" + iterations);
+    System.out.println("--- END OF DO WHILE LOOP");
+} while (iterations < 0);

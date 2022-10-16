@@ -1,0 +1,12 @@
+System.out.println("-------------------------------------------");
+// We can take our shallow copy and make it 'deep' manually.
+for (int i = 0; i < clonedArray.length; i++) {
+    clonedArray[i] = clonedArray[i].clone();  // clone each element
+}
+// Change data on one of our original data points.
+variableCols[2][3] = 10000;
+ 
+// Comparing our arrays, row 3....
+printRow("variableCols", variableCols[2], 2);
+printRow("clonedArray", clonedArray[2], 2);
+System.out.println("-------------------------------------------");

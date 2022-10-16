@@ -1,0 +1,5 @@
+class OurSimpleClass {
+    public String toString() {
+        return "Our Simple Class";
+    }
+}

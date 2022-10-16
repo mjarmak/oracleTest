@@ -1,0 +1,5 @@
+// Example 3
+// Value returned from ternary operation is either an Integer or String
+Object objectResult =
+        (b && (hasArguments && args[0].equals("10"))) ? 10 : "Not ten";
+System.out.println("Result of Example 3 = " + objectResult);

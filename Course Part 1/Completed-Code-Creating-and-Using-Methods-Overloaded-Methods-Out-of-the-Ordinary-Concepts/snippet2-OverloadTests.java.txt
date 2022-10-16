@@ -1,0 +1,8 @@
+public static long add(int a, int... b) {
+    System.out.println("int a, Var args int b");
+    int total = a;
+    for (int val : b) {
+        total += val;
+    }
+    return total;
+}

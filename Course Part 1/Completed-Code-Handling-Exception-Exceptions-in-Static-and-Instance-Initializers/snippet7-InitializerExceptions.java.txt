@@ -1,0 +1,5 @@
+try {
+    InitializerExceptions ie = new InitializerExceptions();
+} catch (Exception e) {
+    System.out.println("Ignoring the error, " + e.getMessage());
+}

@@ -1,0 +1,28 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 4: Using Operators and Decision Constructs
+Topic: Operators
+Sub-Topic: Binary Operators
+*/
+ 
+public class BinaryOperatorExamples {
+    public static void main(String[] args) {
+ 
+        int a = 1;
+        int b = 2;
+        int c = 3;
+        int d = 4;
+        int e = 5;
+        int f = 6;
+ 
+        // Multiplicative (* / %) operations are evaluated first
+        // Before Additive operators (+ -)
+        // and evaluated left to right.
+ 
+        // Could also be written:  a + (e * b) - (f / c) % b;
+        int result = a + e * b - f / c % b;
+        System.out.println("result for (a + e * b - f / c % b) = "
+                + result);
+ 
+    }
+}

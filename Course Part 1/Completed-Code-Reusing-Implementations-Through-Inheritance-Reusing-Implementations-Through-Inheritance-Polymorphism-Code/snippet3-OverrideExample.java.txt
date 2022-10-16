@@ -1,0 +1,7 @@
+public void printInformation(CharSequence s) {
+    System.out.println("BaseClass prints " + s);
+}
+ 
+public CharSequence getInformation() {
+    return getClass().getName();
+}

@@ -1,0 +1,19 @@
+// switch statement with a default block satisfies compiler's full initialization check
+ 
+int testInt = 5;  // test variable for switch statement.
+int r;  // r is an uninitialized local variable here
+switch (testInt) {
+    case 0:
+    case 1:
+    case 2:
+        r = 1;
+        break;
+    case 3:
+    case 4:
+    case 5:
+        r = 2;
+        break;
+    default:
+        r = 3;
+}
+System.out.println("r is " + r);   // r is now fully initialized

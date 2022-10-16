@@ -1,0 +1,10 @@
+public static void StringConstructors() {
+    String s1 = new String("hello");
+    String s2 = new String("hello");
+ 
+    // Now evaluates to false, strings do not point to same reference,
+    // and are not stored in the string pool
+    System.out.println("s1 and s2 are constructed String objects " +
+            "assigned to String variables: (s1 == s2) = " +
+            ((s1 == s2) ? "true" : "false"));
+}

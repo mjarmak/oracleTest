@@ -1,0 +1,7 @@
+public void printInformation(String s) {
+    System.out.println("ExtendedClass prints " + s);
+}
+ 
+public String getInformation() {
+    return getClass().getName();
+}

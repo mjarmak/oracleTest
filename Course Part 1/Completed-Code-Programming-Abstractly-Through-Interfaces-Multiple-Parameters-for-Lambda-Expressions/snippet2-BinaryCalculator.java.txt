@@ -1,0 +1,5 @@
+System.out.println("The numbers (" + value_a + ", " + value_b +
+        ") multiplied = " + myApp.calculate(value_a, value_b, multiplication));
+ 
+System.out.println("The numbers (" + value_a + ", " + value_b +
+        ") divided = " + myApp.calculate(value_a, value_b, division));

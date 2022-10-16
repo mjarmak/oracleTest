@@ -1,0 +1,4 @@
+// Adding a method with matching wrapper
+public String thisOne(Character c) {
+    return "Character matched";
+}

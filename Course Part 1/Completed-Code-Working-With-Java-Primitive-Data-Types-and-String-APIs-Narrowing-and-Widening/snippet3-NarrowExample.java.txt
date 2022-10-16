@@ -1,0 +1,7 @@
+float f2 = 0.0;
+ 
+byte b2 = 0.0;
+char c2 = 0.0;
+short s2 = 0.0;
+int i2 = 0.0;
+long l2 = 0.0;

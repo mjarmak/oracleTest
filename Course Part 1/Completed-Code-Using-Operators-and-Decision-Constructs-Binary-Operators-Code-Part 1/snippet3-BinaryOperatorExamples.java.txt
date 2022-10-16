@@ -1,0 +1,15 @@
+// Modulus with zero divisor using integer operands
+try {
+    System.out.println("Modulus with zero divisor (10 % 0) = "
+            + (10 % 0));
+} catch (Exception ex) {
+    ex.printStackTrace(System.out);
+}
+ 
+//Modulus with zero divisor using  double operands
+try {
+    System.out.println("Modulus with zero divisor (10.0 % 0.0) = "
+            + (10.0 % 0.0));
+} catch (Exception ex) {
+    ex.printStackTrace(System.out);
+}

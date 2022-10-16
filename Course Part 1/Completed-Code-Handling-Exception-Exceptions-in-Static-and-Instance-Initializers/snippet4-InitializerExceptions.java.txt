@@ -1,0 +1,1 @@
+    throw new Exception("Got some error in the class initialization");

@@ -1,0 +1,11 @@
+System.out.println("Modulus examples where double divisor " +
+        "> double dividend");
+// In C and C++, modulus accepts only integral operands but
+// Java accepts Floating point operands as well
+// We see that result still is dividend if divisor > dividend
+for (double i = 0.5; i <= 0.55; i += 0.025) {
+    for (double j = 10; j <= 100; j += 30.57) {
+        System.out.println("i (" + i + ") % j (" + j + ")  = "
+                + (i % j));
+    }
+}

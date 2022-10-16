@@ -1,0 +1,11 @@
+// Anonymous class is a statement, not a declaration.
+// This one is a Helloable (implements Helloable)
+Helloable anomInterfacedClass = new Helloable() {
+    public void hello() {
+        System.out.println("Hello Anonymous Class" +
+                " implementing Interface");
+    }
+};
+ 
+// Executing methods on anonymous class
+anomInterfacedClass.hello();

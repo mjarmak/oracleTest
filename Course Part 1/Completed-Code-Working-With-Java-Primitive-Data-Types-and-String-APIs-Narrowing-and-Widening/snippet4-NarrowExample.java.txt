@@ -1,0 +1,5 @@
+int myIntVariable = 1;
+ 
+byte b2 = myIntVariable;
+char c2 = myIntVariable;
+short s2 = myIntVariable;

@@ -1,0 +1,4 @@
+// Initializer
+{
+   firstString = this.secondString;
+}

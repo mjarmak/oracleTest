@@ -1,0 +1,7 @@
+private void printPublic() {
+    System.out.println("A Boss's public speech cannot be made private");
+}
+ 
+void printProtected() {
+    System.out.println("A Boss's protected speech cannot be packaged");
+}

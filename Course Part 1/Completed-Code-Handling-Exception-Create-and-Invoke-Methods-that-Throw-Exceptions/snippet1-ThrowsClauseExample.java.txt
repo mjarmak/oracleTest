@@ -1,0 +1,15 @@
+
+} catch (RuntimeException e) {
+ 
+    System.out.println("In the catch clause of main(): " +
+            e);
+ 
+} catch (ACustomThrowable te) {
+    System.out.println("In the catch clause for" +
+            " ACustomThrowable in main(): " +
+            te);
+} catch (AnError ae) {
+    System.out.println("In the catch clause for" +
+            " AnError in main(): " +
+            ae);
+}

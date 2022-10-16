@@ -1,0 +1,9 @@
+ArrayList<BaseClass> newBaseList = new ArrayList<>();
+newBaseList.set(0, new BaseClass("one"));
+ 
+ArrayList<BaseClass> newBaseListWithCapacity = new ArrayList<>(10);
+newBaseListWithCapacity.set(0, new BaseClass("one"));
+ 
+ArrayList<BaseClass> newBaseListWithSomeElements = new ArrayList<>(
+        List.of(new BaseClass("one"), new BaseClass("two")));
+newBaseListWithSomeElements.set(2, new BaseClass("three"));

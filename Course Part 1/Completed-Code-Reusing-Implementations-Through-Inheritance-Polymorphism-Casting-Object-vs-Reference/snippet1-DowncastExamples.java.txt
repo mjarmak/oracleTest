@@ -1,0 +1,19 @@
+DowncastExamples dex = new DowncastExamples();
+// We create instances of Dog and Cat but assign them to
+// variables of type Animal
+Animal genericDog = new Dog();
+Animal genericCat = new Cat();
+ 
+// We cast now:
+dex.testDog((Dog) genericDog);
+dex.testCat((Cat) genericCat);
+ 
+// Try the overloaded methods with
+// specifically typed variables.
+dex.testAnimal((Dog) genericDog);
+dex.testAnimal((Cat) genericCat);
+ 
+// Try the overloaded methods with
+// generically typed variables.
+dex.testAnimal(genericDog);
+dex.testAnimal(genericCat);

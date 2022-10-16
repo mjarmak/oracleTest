@@ -1,0 +1,15 @@
+// Modulus operator (remainder operator) returns remainder
+// of operation. Result is easier to understand when the divisor
+// is greater than dividend
+System.out.println("result for (11 % 10) = " + (11 % 10));
+ 
+// The following code will demonstrate examples where
+// dividend < divisor.
+System.out.println("Modulus examples where integer divisor" +
+        " > integer dividend");
+for (int i = 0; i <= 9; i += 3) {
+    for (int j = 10; j <= 100; j += 30) {
+        System.out.println("i (" + i + ") % j (" + j + ")  = "
+                + (i % j));
+    }
+}

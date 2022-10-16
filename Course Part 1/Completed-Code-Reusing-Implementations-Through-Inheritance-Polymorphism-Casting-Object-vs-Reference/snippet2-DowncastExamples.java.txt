@@ -1,0 +1,9 @@
+// First, call the specifically named methods by
+// downcasting generically typed variables to the object types
+dex.testDog((Dog) genericCat);
+dex.testCat((Cat) genericDog);
+ 
+// Try the overloaded methods downcasting
+// generically typed variables to the object types
+dex.testAnimal((Cat) genericDog);
+dex.testAnimal((Dog) genericCat);

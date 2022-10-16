@@ -1,0 +1,4 @@
+Object nullObject = null;
+// secondString will be “null hello"
+String secondString = nullObject + " " + helloString;
+System.out.println("secondString = " + secondString);

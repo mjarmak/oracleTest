@@ -1,0 +1,7 @@
+// Example 4
+// Expressions only evaluated in the one of the cases
+int x = 0;
+int y = 0;
+int newResult = (b && (hasArguments && args[0].equals("10"))) ? x++ : y++;
+System.out.println("Result of Example 4 = " +
+        newResult + ", x = " + x + ", y = " + y);

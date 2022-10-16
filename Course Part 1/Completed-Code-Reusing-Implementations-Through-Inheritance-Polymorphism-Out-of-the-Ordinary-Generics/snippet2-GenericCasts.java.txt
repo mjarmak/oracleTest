@@ -1,0 +1,19 @@
+// We create variable of NextClass and assign it a new instance
+ // NextClass
+ NextClass nextClass = new NextClass();
+ 
+ // We create variable of BaseClass and assign it the nextClass
+ // variable - this is a good assignment as we know.  You can
+ // assign a more specific typed object to a less specifically
+ // typed variable.
+ BaseClass baseClass = nextClass;
+ 
+ // We now create an ArrayList of NextClass and assign it to a
+ // variable of ArrayList typed to NextClass.
+ ArrayList<NextClass> nextList = new ArrayList<>();
+ nextList.add(nextClass);
+ 
+ // We assign nextList to the raw ArrayList variable
+ rawList = nextList;
+ // We assign nextList to the raw List variable
+ aList = nextList;

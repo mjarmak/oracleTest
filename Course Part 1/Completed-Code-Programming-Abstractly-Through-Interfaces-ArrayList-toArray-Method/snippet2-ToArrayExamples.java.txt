@@ -1,0 +1,28 @@
+System.out.println("\nScenario 3:  No parameter passed");
+// Scenario 3: no parameter
+// the method toArray() populates a newly instantiated Object[]
+// array with the list's elements, which happen to all be Integer.
+// The behavior is the same for both a raw list and generic list
+Object[] dInt = intList.toArray();   // CANNOT cast to (Integer[])
+System.out.println("Result type from ArrayList<Integer> " +
+        "assigned to Object[] = " +
+        dInt.getClass().getTypeName());
+System.out.println("--- Resulting array elements = " +
+        Arrays.toString(dInt));
+ 
+// Casting required.
+testValue = (int) dInt[0];
+System.out.println("--- Cast required at individual level:" +
+        " the first element is " + testValue);
+ 
+Object[] dRaw = intList.toArray();
+System.out.println("Result type from ArrayList " +
+        "assigned to Object[] = " +
+        dRaw.getClass().getTypeName());
+System.out.println("--- Resulting array elements = " +
+        Arrays.toString(dRaw));
+ 
+// Casting required.
+testValue = (int) dRaw[0];
+System.out.println("--- Cast required at individual level:" +
+        " the first element is " + testValue);

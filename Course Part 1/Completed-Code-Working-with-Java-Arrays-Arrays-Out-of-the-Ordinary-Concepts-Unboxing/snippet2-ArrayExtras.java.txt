@@ -1,0 +1,6 @@
+System.out.println("\n---- Test methods with common super class");
+Number[] myNumberArray = {0, 1, 2, 4, 5};
+System.out.println("Arrays.mismatch(myNumberArray, integerArray) = "
+        + Arrays.mismatch(myNumberArray, integerArray));
+System.out.println("Arrays.equals(myNumberArray, integerArray) = "
+        + Arrays.equals(myNumberArray, integerArray));

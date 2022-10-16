@@ -1,0 +1,4 @@
+// Compiler let's you get away with it, it's feasible that
+// that mixedArray could be populated with objects of its subtype only
+// but JVM won't allow it
+NextClass[] nextArray = (NextClass[]) mixedArray;

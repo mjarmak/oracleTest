@@ -1,0 +1,2 @@
+public static int branchCount;
+public static int employeeCount;

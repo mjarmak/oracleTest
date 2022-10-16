@@ -1,0 +1,2 @@
+copiedList = List.copyOf(originalList.subList(0, 5));
+System.out.println(copiedList);

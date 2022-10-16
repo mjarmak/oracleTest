@@ -1,0 +1,27 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 3: Working with Java Primitive Data Types and String APIs
+Topic: StringBuilder
+Sub-Topic: Out of the Ordinary
+*/
+ 
+public class StringBuilderExtras {
+    public static void main(String[] args) {
+ 
+        // Create empty StringBuilder
+        StringBuilder builder = new StringBuilder();
+ 
+        // Add some code with leading/trailing whitespcace
+        builder.append("  ABCD                 ");
+        System.out.println("Original Value of builder = *" + builder + "*");
+        System.out.println("Length of builder = " + builder.length());
+        System.out.println("Capacity of builder = " + builder.capacity());
+ 
+        // What do you think trimToSize does?
+        builder.trimToSize();
+        System.out.println("Current Value of builder = *" + builder + "*");
+        System.out.println("Length of builder = " + builder.length());
+        System.out.println("Capacity of builder = " + builder.capacity());
+ 
+    }
+}

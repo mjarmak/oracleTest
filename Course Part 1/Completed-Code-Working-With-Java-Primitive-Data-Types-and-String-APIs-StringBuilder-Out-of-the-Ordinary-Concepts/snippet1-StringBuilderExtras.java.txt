@@ -1,0 +1,4 @@
+builder.replace(0, builder.length(), builder.toString().strip());
+System.out.println("Next Value of builder = *" + builder + "*");
+System.out.println("Length of builder = " + builder.length());
+System.out.println("Capacity of builder = " + builder.capacity());

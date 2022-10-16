@@ -1,0 +1,14 @@
+// Constructor
+Thing() {
+    secondString = "b" + thirdString;
+}
+ 
+// Initializer
+{
+    firstString = "a" + secondString;
+}
+ 
+// Static Initializer
+static {
+    thirdString = "c";
+}

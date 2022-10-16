@@ -1,0 +1,10 @@
+// Add the following statements which access and tries to print the uninitialized local variables
+System.out.println("----------  Are Local Variables set to default values?? --------------");
+System.out.println("mainByte = " + mainByte);
+System.out.println("mainChar = " + mainChar);
+System.out.println("mainShort = " + mainShort);
+System.out.println("mainInt = " + mainInt);
+System.out.println("mainLong = " + mainLong);
+System.out.println("mainFloat = " + mainFloat);
+System.out.println("mainDouble = " + mainDouble);
+System.out.println("mainBoolean = " + mainBoolean);

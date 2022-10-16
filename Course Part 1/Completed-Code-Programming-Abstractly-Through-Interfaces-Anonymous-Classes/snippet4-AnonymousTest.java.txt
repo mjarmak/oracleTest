@@ -1,0 +1,11 @@
+// In the code below, we actually pass an anonymous class in the
+// call to a method that accepts a Helloable type as a parameter
+a.printHello(
+        // Anonymous class created on the fly
+        new Helloable() {
+            public void hello() {
+                System.out.println("Hello Anonymous Class " +
+                        "passed as a parameter");
+            }
+        }
+);

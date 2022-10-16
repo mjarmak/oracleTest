@@ -1,0 +1,4 @@
+// Implicit narrowing can no longer be done because the literal does not fit the container it is assigned to.
+byte b1 = 128;
+char c1 = 65536;
+short s1 = 32768;

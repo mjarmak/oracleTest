@@ -1,0 +1,4 @@
+float f4 = 1.27e02f;
+double d4 = 1.27e02;
+System.out.println("f4 = " + f4);
+System.out.println("d4 = " + d4);

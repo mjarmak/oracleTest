@@ -1,0 +1,3 @@
+new locallyDefinedClass();
+i++;
+System.out.println("value of i after local class instantiated " + i);

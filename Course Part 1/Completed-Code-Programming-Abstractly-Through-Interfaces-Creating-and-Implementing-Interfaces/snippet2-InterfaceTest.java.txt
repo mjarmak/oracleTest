@@ -1,0 +1,7 @@
+System.out.println("\nExecuting concrete methods on interface");
+// public static method can be accessed from type
+System.out.println(InterfaceExample.publicStaticMethod());
+ 
+// default method can be accessed from object which implements type
+InterfaceTest it = new InterfaceTest();
+System.out.println(it.defaultMethod());

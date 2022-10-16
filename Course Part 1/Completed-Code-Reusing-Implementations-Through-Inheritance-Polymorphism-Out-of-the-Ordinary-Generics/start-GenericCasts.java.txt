@@ -1,0 +1,65 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 9: Reusing Implementations Through Inheritance
+Topic: Utilize polymorphism to cast and call methods
+Sub-Topic: Generics and casting
+*/
+ 
+import java.util.ArrayList;
+import java.util.List;
+ 
+public class GenericCasts {
+ 
+    // Just want a few classes to play with
+ 
+    static class BaseClass {
+        String name = "Base Case";
+ 
+        public String toString() {
+            return getClass().getName();
+        }
+    }
+ 
+    static class NextClass extends BaseClass {
+        String name = "Next Best Case";
+ 
+        public String toString() {
+            return getClass().getName() + ": " + name;
+        }
+    }
+ 
+    public static void main(String[] args) {
+        // Raw types
+ 
+        //  Create ArrayList and assign to ArrayList variable
+        ArrayList rawList = new ArrayList();
+        // Declare a List variable
+        List aList;
+        // Assign ArrayList object to List variable:
+        aList = rawList;
+ 
+        // Typed generic lists
+ 
+        //  Create a typed ArrayList using BaseClass and assign to
+        //  ArrayList variable
+        ArrayList<BaseClass> baseList = new ArrayList<>();
+        // Declare a typed List variable using BaseClass as type
+        List<BaseClass> bList;
+        // Assign typed ArrayList object to typed List variable
+        bList = baseList;
+ 
+        // Add a NextClass object to the raw ArrayList
+        rawList.add(new NextClass());
+ 
+        // Add a NextClass object to the typed ArrayList
+        baseList.add(new NextClass());
+ 
+        // Print ArrayList and List variables.
+        System.out.println("We can use either variable to print the raw ArrayList");
+        System.out.println("-- aList = " + aList);
+        System.out.println("-- rawList = " + rawList);
+        System.out.println("We can use either variable to print the typed ArrayList");
+        System.out.println("-- bList = " + bList);
+        System.out.println("-- baseList = " + baseList);
+    }
+}

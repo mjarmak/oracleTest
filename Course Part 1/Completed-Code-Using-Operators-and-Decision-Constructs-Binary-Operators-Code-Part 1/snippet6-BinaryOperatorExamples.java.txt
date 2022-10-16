@@ -1,0 +1,30 @@
+System.out.println("\nResults using relationship operators" +
+        " and logical or operators (& &&) ");
+ 
+a = 0;
+b = 10;
+if ((++a > b) & (++a >= b)) {
+    System.out.println("Evaluation [(++a > b) & (++a >= b)] met");
+}
+System.out.println("Logical & (AND) will evaluate both expressions: a = "
+        + a + ", and b = " + b);
+ 
+a = 0;
+b = 10;
+if ((++a > b) && (++a >= b)) {
+    System.out.println("Evaluation [(++a > b) & (++a >= b)] met");
+}
+ 
+System.out.println("Logical && (AND) will evaluate only first " +
+        "expression if it evaluates to false: a = "
+        + a + ", and b = " + b);
+ 
+a = 0;
+b = 0;
+if ((++a > b) && (++a >= b)) {
+    System.out.println("Evaluation [(++a > b) & (++a >= b)] met");
+}
+ 
+System.out.println("Logical && (AND) will evaluate both " +
+        "expressions if first evaluates to true: a = "
+        + a + ", and b = " + b);

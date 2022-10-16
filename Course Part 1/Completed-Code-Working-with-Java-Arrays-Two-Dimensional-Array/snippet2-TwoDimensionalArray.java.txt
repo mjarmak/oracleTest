@@ -1,0 +1,14 @@
+// Clone a copy of your 2-d array, but it is a shallow clone.
+int[][] clonedArray = variableCols.clone();
+printArray("clonedArray", (int[][]) clonedArray);
+ 
+// Arrays.copyOf works here, but need to cast back to 2-d array
+int[][] copiedCopy = (int[][]) Arrays.copyOf(variableCols,
+        variableCols.length);
+printArray("copiedCopy", copiedCopy);
+ 
+System.out.println("-------------------------------------------");
+// Comparing our arrays, row 3....
+printRow("variableCols", variableCols[2], 2);
+printRow("copiedCopy", ((int[][]) copiedCopy)[2], 2);
+printRow("clonedArray", ((int[][]) clonedArray)[2], 2);

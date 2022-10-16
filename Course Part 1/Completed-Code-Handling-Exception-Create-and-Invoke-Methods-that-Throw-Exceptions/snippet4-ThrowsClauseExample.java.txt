@@ -1,0 +1,11 @@
+// Checked - must satisfy catch or specify - here we catch.
+private void methodTwo() {
+    try {
+        throw new ACustomCheckedException("Error in methodTwo");
+    } catch (Exception e) {
+        System.out.println("In the catch clause of methodTwo(): " +
+                e);
+        throw new ACustomRuntimeException("Changed methodTwo to throw ACustomRuntimeException");
+    }
+ 
+}

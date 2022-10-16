@@ -1,0 +1,11 @@
+// You can use join with a variable list of CharSequence elements ..
+sentence = String.join(" ", "Hello", "World", "How", "are", "you");
+System.out.println("Our sentence using join, variable list of String: " + sentence);
+ 
+// You can use join with Iterable elements, such as array of String
+sentence = String.join(" ", wordArray);
+System.out.println("Our sentence using join, Array of String: " + sentence);
+ 
+// You can use join with Iterable elements, such as List of String
+sentence = String.join(" ", wordList);
+System.out.println("Our sentence using join, ArrayList of String: " + sentence);

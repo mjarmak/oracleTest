@@ -1,0 +1,21 @@
+System.out.println("\n-------------- List methods  -------------------");
+// Does array contain "def"?
+System.out.println("firstList.contains(\"def\") =  "
+        + firstList.contains("def"));
+ 
+// Does array contain elements in partialString?
+System.out.println("firstList.containsAll(Arrays.asList(partialFirstString)) =  "
+        + firstList.containsAll(Arrays.asList(partialFirstString)));
+ 
+// create a second list not in same order
+String[] anotherUnsortedSet = {"jkl", "def", "abc", "ghi", "mno"};
+System.out.println("firstList.containsAll(Arrays.asList(anotherUnsortedSet)) =  "
+        + firstList.containsAll(Arrays.asList(anotherUnsortedSet)));
+ 
+// Use indexOf to get first matching element
+System.out.println("secondList.indexOf(\"jkl\") =  "
+        + secondList.indexOf("jkl"));
+ 
+// Use lastIndexOf to to get last matching element
+System.out.println("secondList.lastIndexOf(\"jkl\") =  "
+        + secondList.lastIndexOf("jkl"));

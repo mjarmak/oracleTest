@@ -1,0 +1,58 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 11: Handling Exception
+Topic:  Describe Exception Handling and types of exceptions
+Sub-Topic:  Catch Examples
+*/
+ 
+import java.io.IOException;
+ 
+class CustomThrowable extends Throwable {
+    CustomThrowable(String message) {
+        super(message);
+    }
+}
+ 
+class CustomException extends Exception {
+    CustomException(String message) {
+        super(message);
+    }
+}
+ 
+public class CatchExamples {
+    public static void main(String[] args) {
+        CatchExamples ce = new CatchExamples();
+ 
+        // Reminder, Throwable or custom subclasses of Throwable and any
+        // RuntimeException descendants are checked.
+ 
+        try {
+ 
+        } catch (Throwable e) {
+ 
+        }
+        //----------------------------
+        try {
+ 
+        } catch (Exception e) {
+ 
+        }
+        //----------------------------
+        try {
+ 
+        } catch (Error e) {
+ 
+        }
+        //----------------------------
+        try {
+ 
+        } catch (RuntimeException e) {
+ 
+        }
+ 
+    }
+ 
+    private void testError() throws IOException {
+        // We'll complete this later
+    }
+}

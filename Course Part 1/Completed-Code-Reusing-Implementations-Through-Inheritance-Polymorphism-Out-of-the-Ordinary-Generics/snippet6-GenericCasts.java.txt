@@ -1,0 +1,6 @@
+// Casting doesn't fix it
+baseList = ( ArrayList<BaseClass> )  nextList;
+ 
+ArrayList<NextClass> anotherTest = ( ArrayList<NextClass> ) rawList;
+ 
+ArrayList<NextClass> anotherTest = ( ArrayList<NextClass> ) baseList;

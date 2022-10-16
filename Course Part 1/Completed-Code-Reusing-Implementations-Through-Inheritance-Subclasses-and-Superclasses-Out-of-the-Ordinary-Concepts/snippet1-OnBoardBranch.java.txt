@@ -1,0 +1,5 @@
+// What does it mean to access the static variables from Branch?
+System.out.println("Call from Branch: Number of Branches = " +
+        Branch.branchCount);
+System.out.println("Call from Branch: Number of Employees = " +
+        Branch.employeeCount);

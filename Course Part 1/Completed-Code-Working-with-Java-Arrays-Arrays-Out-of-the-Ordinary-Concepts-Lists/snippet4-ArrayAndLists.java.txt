@@ -1,0 +1,3 @@
+String[] newRepresentation = (String[]) objectArray;
+System.out.println("newRepresentation array  = " +
+        Arrays.toString(newRepresentation));

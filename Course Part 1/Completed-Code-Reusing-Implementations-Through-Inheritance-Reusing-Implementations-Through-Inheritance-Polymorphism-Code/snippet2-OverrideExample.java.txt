@@ -1,0 +1,3 @@
+    super.goodMethod();
+    System.out.println("AND ExtendedClass executing a better method");
+}

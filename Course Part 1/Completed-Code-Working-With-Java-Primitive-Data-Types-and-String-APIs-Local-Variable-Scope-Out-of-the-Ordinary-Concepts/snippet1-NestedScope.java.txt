@@ -1,0 +1,6 @@
+// the local variable i from previous loop has gone out of scope
+// so it is ok to create another local variable in the second loop
+// declaration of the same name.
+for (i = 5; i > 0; i--) {
+    System.out.println("value of i during SECOND loop " + i);
+}

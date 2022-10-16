@@ -1,0 +1,40 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 5: Working with Java Arrays
+Topic: Arrays
+SubTopic: TwoDimensional Array
+ */
+ 
+import java.util.Arrays;
+ 
+public class TwoDimensionalArray {
+ 
+    public static void printArray(String arrayName, int[][] inputArray) {
+        System.out.println("------------------------------------------");
+        System.out.println(arrayName + " Reference: " + inputArray);
+        for (int row = 0; row < inputArray.length; row++) {
+            printRow(arrayName, inputArray[row], row);
+        }
+    }
+ 
+    public static void printRow(String arrayName, int[] inputArray, int row) {
+        System.out.println(arrayName + " : " + inputArray + " : Row "
+                + (row + 1) + " :  " + Arrays.toString(inputArray));
+ 
+    }
+ 
+    public static void main(String[] args) {
+ 
+        // Create a 2-d array
+        int[][] intArray = new int[2][10];
+ 
+        // Let's see what this looks like using the method we created
+        printArray("intArray", intArray);
+ 
+        // You can also print the 2-d array Using Arrays.deepToString()
+        System.out.println("Printing a multi-dimensional array using " +
+                "Arrays.deepToString()");
+        System.out.println(Arrays.deepToString(intArray));
+ 
+    }
+}

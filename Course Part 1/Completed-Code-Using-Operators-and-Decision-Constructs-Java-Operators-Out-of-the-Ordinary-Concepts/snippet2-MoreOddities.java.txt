@@ -1,0 +1,8 @@
+System.out.println("----------  Third Test --------------");
+// Just complicating matters a bit more.
+for (int i = 10; i <= 20; i += 10) {
+    number = i;
+    result = number-- - number++ * --number;
+    System.out.println("i = " + i + ", number = " +
+            number + ", result = " + result);
+}

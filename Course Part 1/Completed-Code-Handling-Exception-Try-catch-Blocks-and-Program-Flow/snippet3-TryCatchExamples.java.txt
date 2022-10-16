@@ -1,0 +1,10 @@
+TryCatchExamples te = new TryCatchExamples();
+te.printThreeStatements("Before Try Block", 0);
+try {
+ 
+    te.printThreeStatements("In Try Block", 0);
+} catch (Throwable t) {
+    t.printStackTrace(System.out);
+    printErrorStructure(t);
+}
+te.printThreeStatements("After Try/Catch", 0);

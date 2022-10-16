@@ -1,0 +1,13 @@
+System.out.println("\n------- Final toArray examples --------");
+// If you always want an array that represents the elements
+// exactly in the list, you can pass a 0 length array
+String[] arrayRepresentation =
+        (String[]) firstList.toArray(new String[0]);
+ 
+System.out.println("arrayRepresentation array  = " +
+        Arrays.toString(arrayRepresentation));
+ 
+// You can call toArray with no parameter, it returns an array of Object
+Object[] objectArray = firstList.toArray();
+System.out.println("objectArray array  = " +
+        Arrays.toString(objectArray));

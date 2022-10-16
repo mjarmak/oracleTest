@@ -1,0 +1,31 @@
+/*
+Learn Programming Academy's Java 1Z0-815 Certification Exam Course
+Section 5: Working with Java arrays
+Topic: Arrays
+Sub-Topic: Out of the Ordinary
+*/
+ 
+import java.util.Arrays;
+import java.util.List;
+ 
+public class ArraysAndLists {
+    public static void main(String[] args) {
+ 
+        String[] firstString = {
+                "abc", "def", "ghi", "jkl", "mno",
+                "pqr", "stu", "vwx", "yz"
+        };
+ 
+        List firstList = List.copyOf(Arrays.asList(firstString));
+        List secondList = List.of(firstList);
+ 
+        System.out.println("firstList = " + firstList.toString());
+        System.out.println("secondList = " + secondList.toString());
+ 
+        Object o = firstList.get(0);
+        System.out.println(o.getClass().getName());
+ 
+        o = secondList.get(0);
+        System.out.println(o.getClass().getName());
+    }
+}

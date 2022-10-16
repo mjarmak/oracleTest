@@ -1,0 +1,44 @@
+Section 4: Using Operators and Decision Constructs
+Topic: Operators
+Sub-Topic: Binary Operators
+*/
+ 
+public class BinaryOperatorExamples2 {
+    public static void main(String[] args) {
+ 
+        int a = 1;
+        int b = 2;
+        int c = 1;
+ 
+        // == checks equality of values for primitive data types
+        if (a == c) {
+            System.out.println("a and c primitive values are equal");
+        }
+        if (a != b) {
+            System.out.println("a and b are not equal because primitive" +
+                    " data values are not equal");
+        }
+ 
+        // == checks equality of String literals or String objects
+        String s1 = "hello";
+        String s2 = new String(s1);
+        String s3 = s2.intern();
+        if (s1 == s3) {
+            System.out.println("Strings are equal if they are interned or are String literals");
+        }
+        if (s1 != s2) {
+            System.out.println("Otherwise String objects are not equal");
+        }
+ 
+        Object o1 = s1;
+        Object o2 = s1;
+        Object o3 = new String(s1);
+        if (o1 == o2) {
+            System.out.println("Objects are equal if they reference same object");
+        }
+        if (o1 != o3) {
+            System.out.println("Otherwise  objects are not equal");
+        }
+ 
+    }
+}

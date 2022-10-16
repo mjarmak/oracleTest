@@ -1,0 +1,2 @@
+int minValue = Short.MIN_VALUE - 1;  // our loop condition variable is an int, so this is widening
+int maxValue = Short.MAX_VALUE + 1;

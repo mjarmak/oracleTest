@@ -1,0 +1,9 @@
+// Overrride baseMethod in the child class..
+// Note that it is ok to define a return type which can be said to
+// be an Object.
+public Integer baseMethod(String s) {
+    System.out.println("- CHILD OVERRODE " +
+            " 'Object baseMethod(String s)' with "
+            + "'Integer baseMethod(String s)'");
+    return Integer.valueOf(s);
+}

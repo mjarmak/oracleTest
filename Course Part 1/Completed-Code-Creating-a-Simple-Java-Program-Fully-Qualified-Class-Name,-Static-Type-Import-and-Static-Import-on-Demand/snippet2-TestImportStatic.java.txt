@@ -1,0 +1,2 @@
+// A static-import on demand declaration for static variable
+import static java.lang.Math.*;

@@ -1,0 +1,7 @@
+// In the code below, we now replace the anonymous class parameter
+// with a lambda expression
+a.printHello(
+        // Lambda Expression
+        () -> System.out.println("Hello Lambda Expression" +
+                " as a parameter")
+);

@@ -1,0 +1,3 @@
+// Access protected variable through another instance of ParentClass
+System.out.println("- new ParentClass().protectedInt = " +
+        new ParentClass().protectedInt);

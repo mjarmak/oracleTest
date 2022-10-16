@@ -1,0 +1,18 @@
+// Comparing subsets of elements in arrays
+System.out.println("\n----  Arrays.compare for Element Ranges ----");
+ 
+// Set up arrays - note that both arrays contain "abc", "def", "ghi"
+String[] stringArray = {"abc", "def", "ghi", "jkl", "mno",
+        "pqr", "stu", "vwx", "yz"};
+ 
+String[] stringUnsortedArray = {"jkl", "mno", "pqr", "stu",
+        "vwx", "yz", "abc", "def", "ghi"};
+ 
+// We are going to compare the 1st 3 elements of the ordered array,
+// with the last 3 elements of the unsorted array:
+System.out.println(" (Arrays.compare(stringArray, 0, 3, stringUnsortedArray, 6, 9)) = "
+        + Arrays.compare(stringArray, 0, 3, stringUnsortedArray, 6, 9));
+ 
+// Interestingly, you do not have to specify the same number of elements.
+System.out.println(" (Arrays.compare(stringArray, 0, 5, stringUnsortedArray, 6, 9)) = "
+        + Arrays.compare(stringArray, 0, 5, stringUnsortedArray, 6, 9));

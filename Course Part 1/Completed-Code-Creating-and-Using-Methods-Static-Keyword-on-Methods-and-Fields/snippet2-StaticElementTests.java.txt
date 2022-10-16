@@ -1,0 +1,3 @@
+//** Create an object of type StaticStuff.
+        StaticStuff s = new StaticStuff();
+        System.out.println("Created an instance of StaticStuff");

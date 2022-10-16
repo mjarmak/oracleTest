@@ -1,0 +1,10 @@
+public static void main(String[] args) {
+    System.out.println("Executing main()");
+    try {
+        System.out.println(StaticTest.currentMessage);
+    } catch (Exception e) {
+        StaticTest.currentVal = 1;
+        System.out.println(StaticTest.currentMessage);
+    }
+ 
+}

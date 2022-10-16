@@ -1,0 +1,4 @@
+// What happens if you access through instance of SuperClass here?
+System.out.println("- new SuperClass().protectedInt not available" +
+        " through SuperClass instance in " +
+        this.getClass().getName());

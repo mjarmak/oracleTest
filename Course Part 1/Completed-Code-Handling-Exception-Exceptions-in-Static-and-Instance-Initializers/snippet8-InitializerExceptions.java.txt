@@ -1,0 +1,4 @@
+// Second constructor without a throws clause
+InitializerExceptions(String parameterOne)  {
+         
+}

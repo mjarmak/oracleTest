@@ -1,0 +1,25 @@
+System.out.println("\n--- List.of and List.copyOf Examples");
+ 
+// List.of method can take an array and make it a list
+List secondColorList = List.of(primaryColors);
+ 
+// List.copyOf method takes a list and makes another list
+List thirdColorList = List.copyOf(Arrays.asList(primaryColors));
+ 
+System.out.println("\nsecondColorList : "
+        + secondColorList.toString());
+ 
+System.out.println("thirdColorList : "
+        + thirdColorList.toString());
+ 
+// Change value on original array
+primaryColors[0] = "blue";
+ 
+System.out.println("\nprimaryColors after making first element blue: "
+        + Arrays.toString(primaryColors));
+ 
+System.out.println("secondColorList after array changed : "
+        + secondColorList.toString());
+ 
+System.out.println("thirdColorList after array changed : "
+        + thirdColorList.toString());

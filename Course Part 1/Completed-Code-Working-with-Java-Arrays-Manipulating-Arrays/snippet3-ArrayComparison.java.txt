@@ -1,0 +1,17 @@
+// More examples of Arrays.compare
+System.out.println("\n------------- More Arrays.compare ------------");
+System.out.println(" (Arrays.compare(firstString,firstStringUnsorted)) = "
+        + Arrays.compare(firstString, firstStringUnsorted));
+ 
+// If we compare the first elements, we get the same result as comparing the full arrays...
+System.out.println("firstString[0].compareTo(firstStringUnsorted[0]  = "
+        + firstString[0].compareTo(firstStringUnsorted[0]));
+ 
+//  New String array, only  first 3 elements are shared with firstString - the prefix.
+String[] notFullyPrefixedString = {"abc", "def", "ghi", "yz", "vwx", "stu"};
+System.out.println(" (Arrays.compare(firstString,notFullyPrefixedString)) = "
+        + Arrays.compare(firstString, notFullyPrefixedString));
+ 
+// Verify that above result is same as comparing elements at  first non-matching index..
+System.out.println("firstString[3].compareTo(notFullyPrefixedString[3]  = " +
+        firstString[3].compareTo(notFullyPrefixedString[3]));

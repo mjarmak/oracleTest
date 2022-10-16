@@ -8,6 +8,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 class java {
+
+    static String s;
     public static void main(String[] args) {
 
 //        System.out.println("j");
@@ -87,7 +89,8 @@ class java {
         boolean b7_10 = s7.equals(o7_2); // ok but false, this is why .equals is better because o7 was not directly assigned to "Hello" but through an object, changing the reference to the string in the pool
         boolean b7_11 = s7 == o7_3; // ok and true because of .intern()
         boolean b7_12 = s7 == o7_4; // ok and true because of .intern()
-        boolean b7_13 = s7.equals(new StringBuilder("Hello")); // ok but false, this is why .equals is better because o7 was not directly assigned to "Hello" but through an object, changing the reference to the string in the pool
+        boolean b7_13 = s7.equals(new StringBuilder("Hello")); // false, you're comparing an object to a string
+        boolean b7_13_2 = s7 == (new StringBuilder("Hello").toString()); // ok but false, this is why .equals is better because o7 was not directly assigned to "Hello" but through an object, changing the reference to the string in the pool
 
         boolean b7_14 = s7 == s7_4; // false because of new String() creates new object
         boolean b7_14_2 = s7 == s7_4.intern(); // true because of .inter()
@@ -97,9 +100,11 @@ class java {
             b7_15= s7 == s7_3_s;
         }
         boolean b7_16 = false;
+        boolean b7_16_1 = false;
         boolean b7_16_2 = false;
         for (var s7_5_s : s7_5) {
             b7_16= s7 == s7_5_s; //false because of new String() creates new object
+            b7_16_1 = s7 == s7_5_s.toString().intern(); //false, doesnt change anything unless .intern()
             b7_16_2= s7.equals(s7_5_s); //true because .equals compares the value of string and not the object instance
         }
 
@@ -107,6 +112,8 @@ class java {
         System.out.println(c8);
 
         String s9 = new String(new char[]{'H', 'e', 'l', 'l', 'o'}, 2, 2);
+
+        String s10 = java.s + "nope";
     }
 
     public static String solution(String S) {

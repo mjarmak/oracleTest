@@ -5,8 +5,9 @@ Topic: StringBuilder
 Topic: Creation and Capacity
  
 */
+package course;
 
-public class StringBuilderCreation {
+public class StringBuilderCreationComplete {
     public static void main(String[] args) {
 
         // creates empty builder
@@ -15,6 +16,7 @@ public class StringBuilderCreation {
 
         // adds 5 character string at beginning
         sb.append("Hello");
+        System.out.println("sb.toString =" + sb.toString());
         System.out.println("sb.length =" + sb.length());
         System.out.println("sb.capacity = " + sb.capacity());
 

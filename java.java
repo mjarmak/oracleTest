@@ -63,6 +63,50 @@ class java {
         person1 += "nope";
 //        person2 += "nope"; // error, only works on Object
         System.out.println(person1); // acutally concatenated
+
+        String s7 = "Hello";
+        String s7_2 = null;
+        String[] s7_3 = new String[]{"Hello"};
+        String s7_4 = new String("Hello");
+        String[] s7_5 = new String[]{new String("Hello")};
+        Object o7 = new StringBuilder("Hello").toString();
+        Object o7_2 = new String("Hello");
+        Object o7_3 = new StringBuilder("Hello").toString().intern();
+        Object o7_4 = new String("Hello").intern();
+        boolean b7 = s7.equals(null); // ok
+        boolean b7_6 = s7.equals(new String("Hello")); // ok
+        boolean b7_3 = s7.equalsIgnoreCase(null); // ok
+        boolean b7_4 = s7.equalsIgnoreCase(new String("Hello")); // ok
+//        int i7 = s7.compareTo(null); // NOT ok
+//        boolean b7_2 = s7.contentEquals(null); // NOT ok
+
+        boolean b7_7 = s7.equals(o7); // ok
+        boolean b7_8 = s7.equalsIgnoreCase(o7.toString()); // ok
+//        IMPORTANT
+        boolean b7_9 = s7.equals(o7); // ok but false, this is why .equals is better because o7 was not directly assigned to "Hello" but through an object, changing the reference to the string in the pool
+        boolean b7_10 = s7.equals(o7_2); // ok but false, this is why .equals is better because o7 was not directly assigned to "Hello" but through an object, changing the reference to the string in the pool
+        boolean b7_11 = s7 == o7_3; // ok and true because of .intern()
+        boolean b7_12 = s7 == o7_4; // ok and true because of .intern()
+        boolean b7_13 = s7.equals(new StringBuilder("Hello")); // ok but false, this is why .equals is better because o7 was not directly assigned to "Hello" but through an object, changing the reference to the string in the pool
+
+        boolean b7_14 = s7 == s7_4; // false because of new String() creates new object
+        boolean b7_14_2 = s7 == s7_4.intern(); // true because of .inter()
+
+        boolean b7_15 = false;
+        for (var s7_3_s : s7_3) { // true because string was assigned as litteral and not an object
+            b7_15= s7 == s7_3_s;
+        }
+        boolean b7_16 = false;
+        boolean b7_16_2 = false;
+        for (var s7_5_s : s7_5) {
+            b7_16= s7 == s7_5_s; //false because of new String() creates new object
+            b7_16_2= s7.equals(s7_5_s); //true because .equals compares the value of string and not the object instance
+        }
+
+        CharSequence c8 = "nopenope".subSequence(2,5);
+        System.out.println(c8);
+
+        String s9 = new String(new char[]{'H', 'e', 'l', 'l', 'o'}, 2, 2);
     }
 
     public static String solution(String S) {

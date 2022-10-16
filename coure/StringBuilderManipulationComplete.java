@@ -4,7 +4,9 @@ Section 3: Working with Java Primitive Data Types and String APIs
 Topic: Manipulate Data With StringBuilder
 */
 
-public class StringBuilderManipulation {
+package coure;
+
+public class StringBuilderManipulationComplete {
     public static void main(String[] args) {
 
         // Create and Initialize a StringBuilder Object
@@ -34,6 +36,8 @@ public class StringBuilderManipulation {
         sb.append(" How are you?");
         System.out.println("sb = " + sb);
         System.out.println("rb = " + rb);
+
+        System.out.println("After append: (rb == ss) = " + (rb == sb));
 
         String subString = sb.substring(0, 5);
         System.out.println("subString = " + subString);

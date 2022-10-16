@@ -114,6 +114,11 @@ class java {
         String s9 = new String(new char[]{'H', 'e', 'l', 'l', 'o'}, 2, 2);
 
         String s10 = java.s + "nope";
+
+        char[] cs11 = new char[2];
+        s7.getChars(0, s7.length(), cs11, 0);
+        System.out.println(cs11);
+
     }
 
     public static String solution(String S) {

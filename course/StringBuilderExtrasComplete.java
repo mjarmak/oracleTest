@@ -5,7 +5,9 @@ Topic: StringBuilder
 Sub-Topic: Out of the Ordinary
 */
 
-public class StringBuilderExtras {
+package course;
+
+public class StringBuilderExtrasComplete {
     public static void main(String[] args) {
 
         // Create empty StringBuilder
@@ -73,14 +75,15 @@ public class StringBuilderExtras {
                 java.util.Arrays.toString(myCharacterArray6));
 
         // Let's change the destination index
-//        char[] myCharacterArray7 = new char[5];
-//        char[] myCharacterArray8 = new char[5];
-//        builder.toString().getChars(20, 27, myCharacterArray7, 3);
-//        builder.getChars(20, 27, myCharacterArray8, 3);
-//        System.out.println("myCharacterArray7 = " +
-//                java.util.Arrays.toString(myCharacterArray7));
-//        System.out.println("myCharacterArray8 = " +
-//                java.util.Arrays.toString(myCharacterArray8));
+//        capacity is too small
+        char[] myCharacterArray7 = new char[5];
+        char[] myCharacterArray8 = new char[5];
+        builder.toString().getChars(20, 27, myCharacterArray7, 3);
+        builder.getChars(20, 27, myCharacterArray8, 3);
+        System.out.println("myCharacterArray7 = " +
+                java.util.Arrays.toString(myCharacterArray7));
+        System.out.println("myCharacterArray8 = " +
+                java.util.Arrays.toString(myCharacterArray8));
 
     }
 }

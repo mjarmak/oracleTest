@@ -5,9 +5,12 @@ Topic: Operators
 Sub-Topic: Out of Ordinary
 */
 
-public class OperatorOddities {
+package course;
+
+public class OperatorOdditiesComplete {
     public static void main(String[] args) {
 
+//        Promote a byte to an int
         byte byte1 = 1;
         var byte2 = +byte1;  // What is byte2?
         System.out.println("byte2" + TestVar(byte2));
@@ -20,7 +23,7 @@ public class OperatorOddities {
         System.out.println("result" + TestVar(result));
 
         long long1 = 10L;
-        var result2 = long1 + (1.0);
+        double result2 = long1 + (1.0);
         System.out.println("result2" + TestVar(result2));
     }
 

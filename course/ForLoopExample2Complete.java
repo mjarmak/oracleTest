@@ -5,7 +5,9 @@ Topic: Loops
 Sub-Topic: For Loops
 */
 
-public class ForLoopExample2 {
+package course;
+
+public class ForLoopExample2Complete {
 
     public static void main(String[] args) {
 

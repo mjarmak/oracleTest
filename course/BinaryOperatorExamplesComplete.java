@@ -6,7 +6,9 @@ Topic: Operators
 Sub-Topic: Binary Operators
 */
 
-public class BinaryOperatorExamples {
+package course;
+
+public class BinaryOperatorExamplesComplete {
     public static void main(String[] args) {
 
         int a = 1;

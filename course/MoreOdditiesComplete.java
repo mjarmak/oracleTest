@@ -5,7 +5,9 @@ Topic: Operators
 Sub-Topic: Out of the Ordinary
 */
 
-public class MoreOddities {
+package course;
+
+public class MoreOdditiesComplete {
     public static void main(String[] args) {
         int number = 10;
         int result = 0;
@@ -53,7 +55,7 @@ public class MoreOddities {
         // number = number--;
         // value in number stays unchanged
         number = 10;
-        number = number--;
+        number = number--; // the assignment interrupted the decrement
         System.out.println("number = " + number);
     }
 }

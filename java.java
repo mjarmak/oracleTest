@@ -123,6 +123,41 @@ class java {
         s7.getChars(1, 3, cs11, 0); // characters are replaced
         System.out.println(cs11);
 
+        int i8 = 10;
+        int r8 = i8--; // doesnt change
+
+        int i9 = 10;
+        int r9 = --i9 - i9--; // 0, r9 = 9 - 9 --, r9 = 0, i9 becomes 8
+
+        int i10 = 10;
+        int r10 = i10-- - --i10; // 2, r10 = 10 - --9 = 2, r10 = 2,  i10 becomes 8
+        // the first i10 is not reduced, but by when it is when it gets to the second i10
+        // check MoreOdditiesComplete
+
+        // for -- or  ++ you move right to left but for == += -= you move left to right
+
+        Object i11 = 10/3; // returns int
+
+        boolean b12 = true;
+        int i12 = 0;
+        if (b12 = false) { // doesnt go in
+            i12 = 1;
+        }
+
+        byte b13 = 127; // largest value for a byte
+        int i13 = b13 * 10; // byte converted to an int
+
+        switch (i13) { // i13 must be initialized
+            case 10:
+            case 11:
+            case 12:
+            case 13:
+                i13 = 0;
+                break;
+            default:
+                i13 = 0;
+
+        }
     }
 
     public static String solution(String S) {

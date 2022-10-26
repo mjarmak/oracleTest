@@ -4,6 +4,7 @@
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -158,6 +159,35 @@ class java {
                 i13 = 0;
 
         }
+
+        int[] i14, i14_2[];
+        String[] i15[] = { { "1", "1" }, { "1", "1" } };
+        String[] i16[] = new String[2][]; // the first must always have a size, nested array size is optional since it can be initialized later
+
+        // invalid, requires 'new'
+//        String[] i17[] = String[][] { { "1", "1" }, { "1", "1" } };
+
+        int[] i17, i17_2 = { 1,2 };
+
+        // invalid, only works for non-arrays
+//        int[] i18, i18_2 = i18 = { 1,2 };
+
+
+
+        Integer[] integerArray = {0, 1, 2, 3, 4};
+        int[] intArray = {0, 1, 2, 3, 4};
+        // auto boxing (widerning) will not work in these cases
+//        int misMatchedIndex = Arrays.mismatch(intArray, integerArray);
+//        boolean theSame = Arrays.equals(intArray, integerArray);
+//        int compared = Arrays.compare(intArray, integerArray);
+//        but this works because Integer extends Number
+        Number[] myNumberArray = {0, 1, 2, 4, 5};
+        System.out.println("Arrays.mismatch(myNumberArray, integerArray) = "
+                + Arrays.mismatch(myNumberArray, integerArray));
+        System.out.println("Arrays.equals(myNumberArray, integerArray) = "
+                + Arrays.equals(myNumberArray, integerArray));
+//        except this because Number doesn't implement Compara ble
+//        int compare = Arrays.compare(myNumberArray, integerArray);
     }
 
     public static String solution(String S) {

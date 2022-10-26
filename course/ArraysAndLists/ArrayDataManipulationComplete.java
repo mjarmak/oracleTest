@@ -5,10 +5,12 @@ Topic: Arrays
 Sub-Topic: Data Manipulation
 */
 
+package course.ArraysAndLists;
+
 import java.util.Arrays;
 import java.util.Collections;
 
-public class ArrayDataManipulation {
+public class ArrayDataManipulationComplete {
     public static void main(String[] args) {
 
         System.out.println("--- Manipulating data with Arrays static methods");

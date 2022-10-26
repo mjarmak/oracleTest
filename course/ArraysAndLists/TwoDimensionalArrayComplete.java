@@ -4,10 +4,11 @@ Section 5: Working with Java Arrays
 Topic: Arrays
 SubTopic: TwoDimensional Array
  */
+package course.ArraysAndLists;
 
 import java.util.Arrays;
 
-public class TwoDimensionalArray {
+public class TwoDimensionalArrayComplete {
 
     public static void printArray(String arrayName, int[][] inputArray) {
         System.out.println("------------------------------------------");
@@ -68,7 +69,6 @@ public class TwoDimensionalArray {
             clonedArray[i] = clonedArray[i].clone();  // clone each element
         }
         // Change data on one of our original data points.
-        variableCols[2][3] = 10000;
 
         // Comparing our arrays, row 3....
         printRow("variableCols", variableCols[2], 2);

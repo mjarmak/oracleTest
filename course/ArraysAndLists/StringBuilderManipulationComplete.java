@@ -4,7 +4,7 @@ Section 3: Working with Java Primitive Data Types and String APIs
 Topic: Manipulate Data With StringBuilder
 */
 
-package coure;
+package course.ArraysAndLists;
 
 public class StringBuilderManipulationComplete {
     public static void main(String[] args) {

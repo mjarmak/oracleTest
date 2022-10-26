@@ -5,9 +5,11 @@ Topic: Arrays
 Sub-Topic: Out of Ordinary
 */
 
+package course.ArraysAndLists;
+
 import java.util.Arrays;
 
-public class ArrayExtras {
+public class ArrayExtrasComplete {
     public static void main(String[] args) {
 
         int a = 0;
@@ -44,9 +46,10 @@ public class ArrayExtras {
         System.out.println("myIntegerArray = " +
                 Arrays.toString(myIntegerArray));
 
+        // auto boxing (widerning) will not work in these cases
 //        Long[] newLongArray = new int[2];
 //        Integer[] newIntegerArray = new int[2];
-
+//
 //        int[] intArray = {0, 1, 2, 3, 4};
 //        int misMatchedIndex = Arrays.mismatch(intArray, integerArray);
 //        boolean theSame = Arrays.equals(intArray, integerArray);

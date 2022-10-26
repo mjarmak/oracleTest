@@ -4,16 +4,16 @@ Section 5: Working with Java arrays
 Topic: Arrays
 Sub-Topic: Comparing Arrays.
 */
+package course.ArraysAndLists;
 
 import java.util.List;
 import java.util.Arrays;
 
-public class ArrayComparison {
+public class ArrayComparisonComplete {
     public static void main(String[] args) {
 
         // Set up some array data for comparison.
-        String[] firstString = {"abc", "def", "ghi", "jkl", "mno",
-                "pqr", "stu", "vwx", "yz"};
+        String[] firstString =        {"abc", "def", "ghi", "jkl", "mno", "pqr", "stu", "vwx", "yz"};
         String[] copyOfFirstString = {"abc", "def", "ghi", "jkl", "mno",
                 "pqr", "stu", "vwx", "yz"};
         String[] firstStringUnsorted = {"jkl", "mno", "pqr", "stu", "vwx",

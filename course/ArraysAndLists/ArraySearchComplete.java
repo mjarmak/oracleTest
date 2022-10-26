@@ -5,10 +5,12 @@ Topic: Arrays
 Sub-Topic: Search methods
 */
 
+package course.ArraysAndLists;
+
 import java.util.Arrays;
 import java.util.List;
 
-public class ArraySearch {
+public class ArraySearchComplete {
     public static void main(String[] args) {
         // Set up some array data we want to compare.
         String[] firstString = {
@@ -37,7 +39,7 @@ public class ArraySearch {
 
         //  binary search, look for "jkl" of which there are two elements
         System.out.println("Arrays.binarySearch(firstStringUnsortedDuplicates,\"jkl\") = "
-                + Arrays.binarySearch(firstStringUnsortedDuplicates, "jkl"));
+                + Arrays.binarySearch(firstStringUnsortedDuplicates, "jkl")); // returns the index of the first occurent of 'jkl'
 
         //  binary search on unsorted array, for "abc" which is in array
         System.out.println("Arrays.binarySearch(firstStringUnsortedDuplicates,\"abc\") = "

@@ -5,32 +5,34 @@ Topic: Arrays
 Sub-Topic: Out of the Ordinary
 */
 
+package course.ArraysAndLists;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class ArraysAndLists {
+public class ArraysAndListsComplete {
     public static void main(String[] args) {
 
-        String[] firstString = {
+        String[] firstStringArray = {
                 "abc", "def", "ghi", "jkl", "mno",
                 "pqr", "stu", "vwx", "yz"
         };
 
-        List firstList = List.copyOf(Arrays.asList(firstString));
-        List secondList = List.of(firstList);
+        List firstList = List.copyOf(Arrays.asList(firstStringArray));
+        List secondList = List.of(firstList); // returns a list of list
 
         System.out.println("firstList = " + firstList.toString());
         System.out.println("secondList = " + secondList.toString());
 
         Object o = firstList.get(0);
-        System.out.println(o.getClass().getName());
+        System.out.println(o.getClass().getName()); // immutable
 
         o = secondList.get(0);
         System.out.println(o.getClass().getName());
 
         System.out.println("\n--------  subList example ---------");
-        List subList = Arrays.asList(firstString).subList(0, 5);
+        List subList = Arrays.asList(firstStringArray).subList(0, 5);
         System.out.println("subList = " + subList.toString());
 
         // Sort the sublist
@@ -38,8 +40,8 @@ public class ArraysAndLists {
         System.out.println("subList after reverse = "
                 + subList.toString());
 
-        System.out.println("firstString array  = "
-                + Arrays.toString(firstString));
+        System.out.println("firstStringArray array  = "
+                + Arrays.toString(firstStringArray));
         System.out.println("firstList = " + firstList.toString());
 
         // Now let's look at toArray

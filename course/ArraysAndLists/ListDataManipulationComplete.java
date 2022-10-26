@@ -4,11 +4,13 @@ Section 5: Working with Java arrays
 Topic: Arrays
 Sub-Topic:  Using List to manipulate data
 */
+// explains List.of and immutable
+package course.ArraysAndLists;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class ListDataManipulation {
+public class ListDataManipulationComplete {
     public static void main(String[] args) {
 
         // Set up some test data for use in our tests
@@ -20,6 +22,7 @@ public class ListDataManipulation {
 
         // The Arrays.asList returns a list backed by the array;
         List<String> colorList = Arrays.asList(primaryColors);
+        colorList.set(0,"nope");
         System.out.println("colorList: " + colorList.toString());
 
         // Use get method to get an element in the array
@@ -61,7 +64,7 @@ public class ListDataManipulation {
         System.out.println("\n--- List.of and List.copyOf Examples");
 
         // List.of method can take an array and make it a list
-        List secondColorList = List.of(primaryColors);
+        List secondColorList = List.of(primaryColors); // immutable
 
         // List.copyOf method takes a list and makes another list
         List thirdColorList = List.copyOf(Arrays.asList(primaryColors));
@@ -98,5 +101,11 @@ public class ListDataManipulation {
             e.printStackTrace();
         }
 
+        // secondColorList created from List.of method is immutable
+        try {
+            secondColorList.sort(String.CASE_INSENSITIVE_ORDER);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

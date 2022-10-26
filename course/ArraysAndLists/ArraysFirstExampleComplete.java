@@ -5,9 +5,11 @@ Topic:  Single Dimensional Array
  
 */
 
+package course.ArraysAndLists;
+
 import java.util.Arrays;
 
-public class ArraysFirstExample {
+public class ArraysFirstExampleComplete {
     public static void main(String[] args) {
         // Create two arrays, one of Integer, one of int
 

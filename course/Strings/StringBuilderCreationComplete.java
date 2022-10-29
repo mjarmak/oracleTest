@@ -5,7 +5,7 @@ Topic: StringBuilder
 Topic: Creation and Capacity
  
 */
-package course;
+package course.Strings;
 
 public class StringBuilderCreationComplete {
     public static void main(String[] args) {

@@ -7,6 +7,9 @@ Sub-Topic: Initializers, Forward References
 
 // For all the examples below, the initializers reference variables
 // declared after the blocks.
+
+package course.ObjectsAndClasses;
+
 class Thing {
 
     // Constructor
@@ -16,7 +19,7 @@ class Thing {
 
     // Initializer
     {
-        firstString = this.secondString;
+        firstString = "a" + thirdString;
     }
 
     // Static Initializer
@@ -37,9 +40,10 @@ class Thing {
     }
 }
 
-public class ForwardReference {
+public class ForwardReferenceComplete {
     public static void main(String[] args) {
         Thing one = new Thing();
+        System.out.println(one.thirdString);
         System.out.println(one);
     }
 }

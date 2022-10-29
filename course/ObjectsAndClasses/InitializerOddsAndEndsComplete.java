@@ -4,6 +4,8 @@ Section 6: Describing and Using Objects and Classes
 Topic: Declare and Instantiate Objects
 Sub-Topic: Out of the Ordinary
 */
+package course.ObjectsAndClasses;
+
 class ASuperClass {
     String name;
 
@@ -45,7 +47,7 @@ class ASubClass extends ASuperClass {
 
 }
 
-public class InitializerOddsAndEnds {
+public class InitializerOddsAndEndsComplete {
     public static void main(String[] args) {
         ASubClass joe = new ASubClass("Joe");
         System.out.println(joe);

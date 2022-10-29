@@ -4,6 +4,7 @@ Section 6: Describing and Using Objects and Classes
 Topic: Declare and Instantiate Objects
 Sub-Topic: Static Initializer
 */
+package course.ObjectsAndClasses;
 
 class staticInitExample {
     static int statementOrder;
@@ -28,7 +29,7 @@ class staticInitExample {
     }
 }
 
-public class StaticInitializer {
+public class StaticInitializerComplete {
     public static void main(String[] args) {
         System.out.println("statements made so far = " +
                 staticInitExample.statementOrder);

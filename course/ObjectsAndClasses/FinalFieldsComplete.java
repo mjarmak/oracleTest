@@ -4,6 +4,7 @@ Section 6: Describing and Using Objects and Classes
 Topic: Declare and Instantiate Objects
 Sub-Topic: Final Fields
 */
+package course.ObjectsAndClasses;
 
 class Constants {
     // Final static class variables are considered constants.
@@ -21,7 +22,7 @@ class Constants {
 
 }
 
-public class FinalFields {
+public class FinalFieldsComplete {
 
     // You can create final instance variables that are not static.
 
@@ -36,12 +37,12 @@ public class FinalFields {
     final String FIVE;
 
     // constructor sets final field five
-    FinalFields() {
+    FinalFieldsComplete() {
         FIVE = "final field FIVE =  five";
     }
 
     // new constructor takes an argument
-    FinalFields(String value) {
+    FinalFieldsComplete(String value) {
         FIVE = "final field FIVE =  " +value;
     }
 
@@ -52,10 +53,10 @@ public class FinalFields {
         System.out.println(Constants.TWO);
         System.out.println(Constants.THREE);
 
-        System.out.println((new FinalFields()));
+        System.out.println((new FinalFieldsComplete()));
 
         System.out.println("----------------------------");
-        System.out.println((new FinalFields("six")));
+        System.out.println((new FinalFieldsComplete("six")));
     }
 
     public String toString() {

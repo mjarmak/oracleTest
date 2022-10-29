@@ -5,7 +5,7 @@ Topic: StringBuilder
 Sub-Topic: Out of the Ordinary
 */
 
-package course;
+package course.Strings;
 
 public class StringBuilderExtrasComplete {
     public static void main(String[] args) {

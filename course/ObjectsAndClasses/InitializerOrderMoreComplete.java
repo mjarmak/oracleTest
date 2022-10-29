@@ -4,6 +4,7 @@ Section 6: Describing and Using Objects and Classes
 Topic: Declare and Instantiate Objects
 Sub-Topic: Initializers
 */
+package course.ObjectsAndClasses;
 
 class MixItUpClass {
     static int statementOrder;
@@ -53,7 +54,7 @@ class MixItUpClass {
     }
 }
 
-public class InitializerOrderMore {
+public class InitializerOrderMoreComplete {
     public static void main(String[] args) {
         System.out.println(new MixItUpClass());
     }

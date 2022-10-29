@@ -7,6 +7,7 @@ Sub-Topic:  Object references
 
 // A simple test class with a few attributes, a constructor and
 // a method.
+package course.ObjectsAndClasses;
 class TestClass {
 
     private String a = "a";
@@ -23,7 +24,7 @@ class TestClass {
     }
 }
 
-public class References {
+public class ReferencesComplete {
     public static void main(String[] args) {
 
         // Declare and instantiate some objects
@@ -60,7 +61,7 @@ public class References {
         System.out.println("---------Finally-------------");
         System.out.println("aref has a reference to object : " + aref);
         System.out.println("bref has a reference to object : " + bref);
-        System.out.println("dref has a reference to object : " + cref);
+        System.out.println("cref has a reference to object : " + cref);
         System.out.println("dref has a reference to object : " + dref);
         System.out.println("eref has a reference to object : " + eref);
 

@@ -4,6 +4,7 @@ Section 6: Describing and Using Objects and Classes
 Topic: Declare and Instantiate Objects
 Sub-Topic: Initializers
 */
+package course.ObjectsAndClasses;
 
 class OrderedClass {
     static int statementOrder;
@@ -43,7 +44,7 @@ class OrderedClass {
     }
 }
 
-public class InitializerOrder {
+public class InitializerOrderComplete {
     public static void main(String[] args) {
         // Instantiating the object should set off initialization code.
         OrderedClass o = new OrderedClass();

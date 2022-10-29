@@ -4,7 +4,7 @@ Section 3: Working with Java Primitive Data Types and String APIs
 Topic: Create and Manipulate Strings
 Sub-Topic:  Counting String Objects
 */
-package course;
+package course.Strings;
 
 public class StringCountComplete {
     public static void main(String[] args) {

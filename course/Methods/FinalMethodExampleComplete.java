@@ -4,6 +4,7 @@ Section 7: Creating and Using Methods
 Topic: Create Methods and Constructors
 Sub-Topic: Final Methods
 */
+package course.Methods;
 
 // Create an abstract class with abstract methods
 abstract class WillHaveManySubTypes {
@@ -20,13 +21,13 @@ abstract class WillHaveManySubTypes {
     }
 }
 
-public class FinalMethodExample extends WillHaveManySubTypes {
+public class FinalMethodExampleComplete extends WillHaveManySubTypes {
     private boolean flag = false;
 
     public static void main(String[] args) {
 
         // We instantiate an object and test all the methods
-        FinalMethodExample e = new FinalMethodExample();
+        FinalMethodExampleComplete e = new FinalMethodExampleComplete();
         e.doXYourWay();
         e.doYYourWay();
         e.doZOnlyOneWay();
@@ -46,6 +47,7 @@ public class FinalMethodExample extends WillHaveManySubTypes {
 //        System.out.println("Implement Z my way");
 //    }
 
+//    You are forced to implement abstract methods in extending classes.
     public String toString() {
 //        return super.toString();
         return "Not implemented yet";

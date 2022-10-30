@@ -7,9 +7,12 @@ Sub-Topic: Overloading constructors
 
 // The MixAndMatch class has 3 constructors to demonstrate
 // constructor overloading and constructor chaining
+
+package course.Methods;
+
 class MixAndMatch {
-    String mix;
-    String match;
+//    String mix;
+//    String match;
     String mixAndMatch;
     static int counter = 0;
 
@@ -31,12 +34,12 @@ class MixAndMatch {
     MixAndMatch(String mix, String match) {
         // constructor chaining - call the single parameter constructor
         this(mix + " and " + match);
-        this.mix = mix;
-        this.match = match;
+//        this.mix = mix;
+//        this.match = match;
     }
 }
 
-public class ConstructorOverload {
+public class ConstructorOverloadComplete {
     public static void main(String[] args) {
 
         // Test a variety of constructors

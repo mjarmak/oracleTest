@@ -5,6 +5,8 @@ Topic: Create Methods and Constructors
 Sub-Topic: Why create a private constructor
 */
 
+package course.Methods;
+
 class OnlyClass {
 
     // private constructor, the ONLY constructor
@@ -35,13 +37,14 @@ class OnlyClass {
     }
 }
 
-public class RestrictedObjects {
+public class RestrictedObjectsComplete {
     public static void main(String[] args) {
         OnlyClass.doSomething();
 //        OnlyClass o = new OnlyClass();
     }
 }
 
+//A class with a private constructor cannot be extended by another class.
 //class MyOnlyClass extends OnlyClass {
 //
 //}

@@ -4,6 +4,8 @@ Section 7: Creating and Using Methods
 Topic: Create Methods and Constructors
 Sub-Topic: Overloaded Methods
 */
+package course.Methods;
+
 class WhichOne {
     public String thisOne(Integer i) {
         return "Integer matched";
@@ -27,11 +29,13 @@ class WhichOne {
     }
 }
 
-public class OverloadMatches {
+public class OverloadMatchesComplete {
     public static void main(String[] args) {
         WhichOne whichOne = new WhichOne();
         char c = 'a';
         System.out.println("Method (" + whichOne.thisOne(c) +
+                ") was executed for " + c);
+        System.out.println("Method (" + whichOne.thisOne(Character.valueOf(c)) +
                 ") was executed for " + c);
 
     }

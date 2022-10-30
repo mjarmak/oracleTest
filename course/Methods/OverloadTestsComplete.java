@@ -8,6 +8,9 @@ Sub-Topic: Overload out of the ordinary
 // The Calculator class demonstrates overloading
 // static methods.  Each method prints a unique message so we can
 // understand which method was picked by the JVM
+
+package course.Methods;
+
 class Calculator {
     public static long add(int a, Double f) {
         System.out.println("int + Double");
@@ -40,7 +43,7 @@ class Calculator {
     }
 }
 
-public class OverloadTests {
+public class OverloadTestsComplete {
     public static void main(String[] args) {
 
         // Testing Calculator with multiple primitive data types

@@ -7,6 +7,9 @@ Sub-Topic: static keyword
 
 // This class demonstrates static fields, a static initializer, and
 // a static method
+
+package course.Methods;
+
 class StaticStuff {
     static final String appName = "A Good App";
 
@@ -24,7 +27,7 @@ class StaticStuff {
     static int counter;
 }
 
-public class StaticElementTests {
+public class StaticElementTestsComplete {
     public static void main(String[] args) {
 
         // Add some 'work' first to prove StaticStuff not initialized
@@ -34,7 +37,8 @@ public class StaticElementTests {
         }
 
         //** Create an object of type StaticStuff.
-//        StaticStuff s = null;
+        StaticStuff s = null;
+        System.out.println("Created null instance of the object didn't initialize it");
 
 //        // We access static member of the StaticStuff class
 //        System.out.println("Application Name: " + s.appName);
@@ -45,7 +49,7 @@ public class StaticElementTests {
         // Execute static method on StaticStuff
 //        s.printAppName();
 
-        StaticStuff s = new StaticStuff();
+        s = new StaticStuff();
         System.out.println("Created first instance of StaticStuff");
         s.printAppName();
 

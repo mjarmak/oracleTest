@@ -4,8 +4,9 @@ Section 7: Creating and Using Methods
 Topic: Create Methods and Constructors
  
 */
+package course.Methods;
 
-public class TestPassByValue {
+public class TestPassByValueComplete {
     public static void main(String[] args) {
 
         // Set up some test data

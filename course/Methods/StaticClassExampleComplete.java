@@ -9,6 +9,9 @@ Sub-Topic: static keyword
 // a static field with the type of the abstract class
 // and a method that is a pass thru to the abstract method on
 // the abstract class
+
+package course.Methods;
+
 class UtilityClass {
 
     // nested static abstract class
@@ -47,11 +50,13 @@ class CustomLogger extends UtilityClass.Logger {
 }
 
 // This code tests the code from above.
-public class StaticClassExample {
+public class StaticClassExampleComplete {
 
     public static void main(String[] args) {
 
         UtilityClass.logger = new CustomLogger();
+
+//        call the static method which call the method in CustomLogger
         UtilityClass.log("An important message");
     }
 }

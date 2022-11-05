@@ -4,11 +4,11 @@ Section 8: Applying Encapsulation
 Topic: Applying Access Modifiers
 */
 
-package pkga;
+package course.Encapsulation.lesson1.pkga;
 
 class PackageAClass {
     void testAccess() {
-        SuperClass c = new SuperClass();
+        SuperClassComplete c = new SuperClassComplete();
         System.out.println("A non-subclass class has access to all but " +
                 "private fields of another class in same package");
 
@@ -24,14 +24,14 @@ class PackageAClass {
     }
 }
 
-public class SuperClass {
+public class SuperClassComplete {
     public int publicInt = 10;
     int packageInt = 20;
     protected int protectedInt = 30;
     private int privateInt = 40;
 
     public static void main(String[] args) {
-        new SuperClass().testAccess();
+        new SuperClassComplete().testAccess();
         new PackageAClass().testAccess();
     }
 

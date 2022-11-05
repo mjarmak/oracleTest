@@ -6,6 +6,9 @@ Topic: Applying Access Modifiers to Attributes
 
 // Create a base class Animal which has one attribute with each
 // type of access modifier
+
+package course.Encapsulation.lesson2.pkga;
+
 class Animal {
 
     // Each attribute has a different access modifier
@@ -53,7 +56,7 @@ class Dog extends Animal {
 
 }
 
-public class AllowableChildModifiers {
+public class AllowableChildModifiersComplete {
     public static void main(String[] args) {
 
         Animal a = new Animal();
@@ -62,16 +65,16 @@ public class AllowableChildModifiers {
 
         System.out.println("Created a specific dog");
         Dog pug = new Dog("Fran", "Brandy", "Pug");
-        System.out.println(pug.toString());
+        System.out.println(pug.toString()); // all null because it calls super.toString()
 
         System.out.println("Pug's type is " + pug.type);
         System.out.println("Pug's breed is " + pug.breed);
         System.out.println("Pug's owner is " + pug.owner);
 
         a = pug;
-        System.out.println("Pug's breed is " + a.breed);
-        System.out.println("Pug's owner is " + a.owner);
-        System.out.println("Pug's name is " + a.name);
+        System.out.println("Animal's breed is " + a.breed);
+        System.out.println("Animal's owner is " + a.owner);
+        System.out.println("Animal's name is " + a.name);
 //        System.out.println("Pug's type is " + a.type);
     }
 }

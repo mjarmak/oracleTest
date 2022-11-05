@@ -5,7 +5,7 @@ Topic: Access Modifiers
 Sub-Topic: Constructors
 */
 
-package pkgOne;
+package course.Encapsulation.lesson3.pkgOne;
 
 class LevelOneClass {
     // Protected access constructor
@@ -21,16 +21,16 @@ class LevelOneClass {
     }
 }
 
-public class LevelTwoClass extends LevelOneClass {
+public class LevelTwoClassComplete extends LevelOneClass {
 
     // Protected access constructor
-    protected LevelTwoClass() {
+    protected LevelTwoClassComplete() {
         System.out.println("protected LevelTwoClass " +
                 "no args constructor");
     }
 
     // Package-private access constructor
-    LevelTwoClass(String text) {
+    LevelTwoClassComplete(String text) {
         System.out.println("package level LevelTwoClass " +
                 "single params constructor");
     }

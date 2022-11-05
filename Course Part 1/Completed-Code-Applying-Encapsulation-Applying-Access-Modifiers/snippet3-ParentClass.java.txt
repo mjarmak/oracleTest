@@ -1,3 +1,0 @@
-// What happens if you access through instance of SuperClass here?
-System.out.println("- new SuperClass().protectedInt = "
-        + new SuperClass().protectedInt);

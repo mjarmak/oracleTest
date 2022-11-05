@@ -4,23 +4,24 @@ Section 8: Applying Encapsulation
 Topic: Applying Access Modifiers
 */
 
-package pkgb;
+package course.Encapsulation.lesson1.pkgb;
 
-import pkga.SuperClass;
 
-class PackageBClass {
+import course.Encapsulation.lesson1.pkga.SuperClassComplete;
+
+class PackageBClassComplete {
     void testAccess() {
-        SuperClass c = new SuperClass();
+        SuperClassComplete c = new SuperClassComplete();
         System.out.println("A non sub-class class in a different package" +
                 " has access only to a public class's public fields ");
         System.out.println("- SuperClass().publicInt = " + c.publicInt);
     }
 }
 
-public class ParentClass extends SuperClass {
+public class ParentClassComplete extends SuperClassComplete {
     public static void main(String[] args) {
-        new PackageBClass().testAccess();
-        new ParentClass().testAccess();
+        new PackageBClassComplete().testAccess();
+        new ParentClassComplete().testAccess();
     }
 
     void testAccess() {
@@ -36,11 +37,11 @@ public class ParentClass extends SuperClass {
 
         // Access protected variable through another instance of ParentClass
         System.out.println("- new ParentClass().protectedInt = " +
-                new ParentClass().protectedInt);
+                new ParentClassComplete().protectedInt);
 
 //        // What happens if you access through instance of SuperClass here?
 //        System.out.println("- new SuperClass().protectedInt = "
-//                + new SuperClass().protectedInt);
+//                + new SuperClassComplete().protectedInt);
 
         // What happens if you access through instance of SuperClass here?
         System.out.println("- new SuperClass().protectedInt not available" +

@@ -4,12 +4,12 @@ Section 8: Applying Encapsulation
 Topic: Access Modifiers
 Sub-Topic: Constructors
 */
-package pkgTwo;
+package course.Encapsulation.lesson3.pkgTwo;
 
-import pkgOne.LevelTwoClass;
+import course.Encapsulation.lesson3.pkgOne.LevelTwoClassComplete;
 
 // Extends class from a different package
-class LevelThreeClass extends LevelTwoClass {
+class LevelThreeClass extends LevelTwoClassComplete {
 
     // package-private constructor
     LevelThreeClass() {
@@ -26,7 +26,7 @@ class LevelThreeClass extends LevelTwoClass {
     }
 }
 
-public class ConstructorAccess {
+public class ConstructorAccessComplete {
     public static void main(String[] args) {
         // The constructor test
         LevelThreeClass c = new LevelThreeClass();

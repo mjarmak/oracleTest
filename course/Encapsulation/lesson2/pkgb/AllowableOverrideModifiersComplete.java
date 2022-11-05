@@ -5,7 +5,11 @@ Topic: Applying Access Modifiers to Methods
 */
 
 // Employee class has a method for each type of modifier...
+
+package course.Encapsulation.lesson2.pkgb;
+
 class Employee {
+    public int i;
     public void printPublic() {
         System.out.println("An Employee can make a public statement");
     }
@@ -33,6 +37,7 @@ class Employee {
 // subclass of Employee overrides some of Boss's methods,
 // changing access modifiers
 class Boss extends Employee {
+    public int i;
 
     // making a private method on parent public on child
     public void printPrivate() {
@@ -55,7 +60,7 @@ class Boss extends Employee {
 //    }
 }
 
-public class AllowableOverrideModifiers {
+class AllowableOverrideModifiersComplete {
     public static void main(String[] args) {
         Employee e = new Employee();
         e.printPublic();

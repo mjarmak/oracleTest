@@ -1,3 +1,0 @@
-public void printInformation(CharSequence s) {
-    System.out.println("ExtendedClass prints " + s);
-}

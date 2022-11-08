@@ -1,3 +1,0 @@
-public static void addEmployee(Employee e) {
-    employeeCount++;
-}

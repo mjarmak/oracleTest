@@ -1,1 +1,0 @@
-("ExtendedClass executing a better method");

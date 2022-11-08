@@ -1,3 +1,0 @@
-// downcasting a method return type
-Cat c = (Cat) dex.passThrough(genericCat);
-c.printCat();

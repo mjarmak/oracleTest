@@ -188,6 +188,9 @@ class java {
                 + Arrays.equals(myNumberArray, integerArray));
 //        except this because Number doesn't implement Compara ble
 //        int compare = Arrays.compare(myNumberArray, integerArray);
+
+        Integer i18 = (Integer) 10;
+        int i19 = i18;
     }
 
     public static String solution(String S) {

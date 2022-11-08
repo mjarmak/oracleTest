@@ -1,4 +1,0 @@
-static {
-    System.out.println("Company Static Initializer");
-    branchCount = 10;
-}

@@ -1,4 +1,0 @@
-static {
-    System.out.println("Branch Static Initializer");
-    employeeCount = 200;
-}

@@ -1,4 +1,0 @@
-
-public Object passThrough(Object o) {
-    return o;
-}

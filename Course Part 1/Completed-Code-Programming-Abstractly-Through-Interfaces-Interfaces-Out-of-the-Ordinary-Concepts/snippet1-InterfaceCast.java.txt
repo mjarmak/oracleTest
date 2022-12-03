@@ -1,3 +1,0 @@
-// Cast objects and pass to our methods
-testLaughable((Laughable) story);
-testStory((Story) joke);

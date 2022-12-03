@@ -4,9 +4,7 @@
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 class java {
 
@@ -191,6 +189,13 @@ class java {
 
         Integer i18 = (Integer) 10;
         int i19 = i18;
+
+        List<String> s19 = new ArrayList<>();
+
+//      ERRORS
+//        typedList.set(typedList.size(), new BaseClass("def"));
+//        typedList.add(typedList.size() + 1, new BaseClass("def"));
+//        typedList.set(0, typedSubList);
     }
 
     public static String solution(String S) {

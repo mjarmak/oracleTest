@@ -1,3 +1,0 @@
-BinaryIntegerOperation multiplication = (var a, var b) -> a * b;
- 
-BinaryIntegerOperation division = (a, b) -> a / b;

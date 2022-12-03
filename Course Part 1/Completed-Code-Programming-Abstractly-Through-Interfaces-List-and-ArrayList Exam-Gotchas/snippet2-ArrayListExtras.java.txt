@@ -1,1 +1,0 @@
-typedList.add(typedList.size()+1, new BaseClass("def"));

@@ -1,2 +1,0 @@
-Main-Class: client.Main
-Class-Path: com.a.util.jar com.b.util.jar

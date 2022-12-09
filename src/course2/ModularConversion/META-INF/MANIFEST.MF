@@ -1,2 +1,0 @@
-Main-Class: sample.api.Controller
-Class-Path: sample.core.jar sample.entity.jar sample.service.jar

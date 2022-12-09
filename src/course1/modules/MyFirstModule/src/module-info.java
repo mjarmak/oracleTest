@@ -1,3 +1,3 @@
-module MyFirstModule {
-    requires MySecondModule;
-}
+//module MyFirstModule {
+//    requires MySecondModule;
+//}

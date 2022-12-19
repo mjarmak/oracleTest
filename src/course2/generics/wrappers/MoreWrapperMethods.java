@@ -101,6 +101,7 @@ public class MoreWrapperMethods {
 
         System.out.println("\n---- Using the get[Wrapper]() methods ----");
 
+        // does not parse, but gets env variables
         System.out.println("Integer.getInteger(\"10\") = " +
                 Integer.getInteger("10"));
         System.out.println("Boolean.getBoolean(\"true\") = " +

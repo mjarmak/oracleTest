@@ -39,5 +39,10 @@ public class WrapperOperators {
                 System.out.println(" m is instance of Integer ");
             }
         }
+
+//        doesn't work, because any operation on variables smaller than an int will result in an int
+        Short ii = 10;
+//        short ss = ii + j;
+//        Short sss = ii + j;
     }
 }

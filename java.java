@@ -196,6 +196,22 @@ class java {
 //        typedList.set(typedList.size(), new BaseClass("def"));
 //        typedList.add(typedList.size() + 1, new BaseClass("def"));
 //        typedList.set(0, typedSubList);
+
+        List<String> s20 = new ArrayList<>(); // type inference
+        s20.add("k");
+//        s20.add(new ArrayList<>()); doesn't work
+
+        List s21 = new ArrayList<String>(); // valid but discouraged
+        s21.add("k");
+        s21.add(new ArrayList<>()); // works, the String type argument on the right side is ignored.
+
+        var s22 = new ArrayList<String>(); // valid
+        s22.add("k");
+//        s22.add(new ArrayList<>()); doesn't work because String is specified as type argument on the right side
+
+        var s23 = new ArrayList<>(); // valid
+        s23.add("k");
+        s23.add(new ArrayList<>()); // any type works
     }
 
     public static String solution(String S) {

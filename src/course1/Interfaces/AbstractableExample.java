@@ -22,18 +22,34 @@ abstract class AbstractClass implements Abstractable {
     // Note that this method is NOT public, but package-private
     // and you must declare it abstract.
     abstract void callConcrete();
+
+    public abstract void makeConcrete();
+
+    public final String test1() {
+        return "K";
+    }
+    private String test2() {
+        return "K";
+    }
 }
 
 // AbstractableExample extends AbstractClass (which in turn
-// implements Abstractable).   The AbstractableExample is required
+// implements Abstractable). The AbstractableExample is required
 // to implement all abstract methods defined by the interface and
 // not implemented by the abstract class as well as any abstract
 // methods declared on the abstract class itself.
 public class AbstractableExample extends AbstractClass {
     public static void main(String[] args) {
         AbstractableExample e = new AbstractableExample();
+//        AbstractClass e = new AbstractableExample(); works
         e.callConcrete();
     }
+
+//    cannot override a final method.
+//    public String test1() {
+//        return "K";
+//    }
+
 
     // Method is required through extension of AbstractClass -
     // defined on the interface AbstractClass implements.

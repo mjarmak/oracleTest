@@ -138,6 +138,7 @@ public class MapExample {
     private static void testComputes(Map<String, Integer> m) {
         System.out.println("Original State: " + m);
         // If John exist and value is not null, apply function
+
         m.compute("John", (key, val) -> (val == null) ? 0 : val * 100);
         System.out.println("compute(John, val*100): " + m);
 

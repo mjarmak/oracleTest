@@ -1,4 +1,4 @@
-package src.course2.functionalInterface.outOfOrdinary;
+package src.course2.functionalInterfaces.outOfOrdinary;
 
 interface FunctionableQuiz {
 

@@ -4,18 +4,18 @@ Section 3: Working with Java Primitive Data Types and String APIs
 Topic: Identify the Scope of a variable.
 */
 
-public class Person {
+public class Person1 {
     static String name = "UNKNOWN";  // Class Variable
     String instanceName = "UNKNOWN"; // Instance Variable;
     String age = "25";  // Instance Variable initialized;
 
     // No Args Constructor
-    public Person() {
+    public Person1() {
 
     }
 
     // Single Parameter Constructor.
-    public Person(String age) {
+    public Person1(String age) {
         // Constructors are perfect examples of how a method parameter
         // name can have same name as class or instance variable name.
 
@@ -26,7 +26,7 @@ public class Person {
     }
 
     // Two Args Constructor
-    public Person(String name, String age) {
+    public Person1(String name, String age) {
         // constructor parameters are named and typed the same as the
         // class variable 'name' and the instance variable 'age'
 
@@ -39,7 +39,7 @@ public class Person {
 
         // Also setting static variable name in same assignment
         // statement
-        this.instanceName = Person.name = name;
+        this.instanceName = Person1.name = name;
     }
 
 }

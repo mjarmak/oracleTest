@@ -59,8 +59,8 @@ class java {
         var i6 = 1;
 //        i6 = 1L; // needs manual casting
 
-        Object person1 = new Person();
-        Person person2 = new Person();
+        Object person1 = new Person1();
+        Person1 person2 = new Person1();
         person1 += "nope";
 //        person2 += "nope"; // error, only works on Object
         System.out.println(person1); // acutally concatenated

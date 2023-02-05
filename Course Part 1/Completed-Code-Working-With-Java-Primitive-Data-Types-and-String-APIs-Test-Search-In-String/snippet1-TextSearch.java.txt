@@ -1,2 +1,0 @@
-lastIndex = fullText.lastIndexOf(searchString, 19);
-System.out.println("And now the lastIndex = " + lastIndex);

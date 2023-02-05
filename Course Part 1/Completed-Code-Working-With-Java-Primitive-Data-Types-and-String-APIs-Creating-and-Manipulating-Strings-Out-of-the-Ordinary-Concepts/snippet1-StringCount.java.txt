@@ -1,5 +1,0 @@
-// The replace method with two chars that are the same does NOT
-// create a new String object
-stringReplaced = stringOriginal.replace('a', 'a');
-System.out.println("5.  stringOriginal==stringReplaced = " +
-        (stringOriginal == stringReplaced));

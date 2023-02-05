@@ -1,7 +1,0 @@
-//first create a sentence with multiple white space
-sentence = String.join("\u0020\t\u0020\n", wordList);
-System.out.println("Our sentence with spaces and tabs and carriage returns: " + sentence);
- 
-// regular expression matches any white space not just \u0020
-splitWords = sentence.split("\\s+");
-System.out.println(Arrays.toString(splitWords));

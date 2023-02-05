@@ -1,2 +1,0 @@
-// Region Matches, exact case, exact substring
-System.out.println(mississippi.regionMatches(0, "miss", 0, 4));

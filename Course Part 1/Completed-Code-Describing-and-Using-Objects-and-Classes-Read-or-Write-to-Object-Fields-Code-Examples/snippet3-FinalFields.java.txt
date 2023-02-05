@@ -1,6 +1,0 @@
-// initializer sets final field four
-{
-    FOUR = "final field FOUR = four";
-    //** Add five here
-    FIVE = "final field FIVE =  five";
-}

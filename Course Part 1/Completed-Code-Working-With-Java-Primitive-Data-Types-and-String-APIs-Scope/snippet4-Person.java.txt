@@ -1,3 +1,0 @@
-if (age >= 95) {
-    // Added String here, creating a local variable in if block
-    String ageClassification = "The Greatest Generation";

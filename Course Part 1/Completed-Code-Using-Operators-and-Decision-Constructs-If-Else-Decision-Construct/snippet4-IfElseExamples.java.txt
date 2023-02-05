@@ -1,6 +1,0 @@
-//First set variables back to false
-a = false;
-b = false;
-c = false;
-if ((a = true) && (b = true) || (c = true)) ;
-System.out.println(a + " " + b + " " + c);

@@ -1,5 +1,0 @@
-// Create an instance initializer block that throws an unchecked exception
-{
-    int i = 0;
-    if (i == 0) throw new IOException("Whoops");
-}

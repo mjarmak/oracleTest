@@ -1,5 +1,0 @@
-// StringJoiner was added in Java 8 as well..
-StringJoiner sj = new StringJoiner(" ");
-for (String word : wordArray) sj.add(word);
-sentence = sj.toString();
-System.out.println("Our sentence using StringJoiner: " + sentence);

@@ -1,4 +1,0 @@
-int i = 10;
-// thirdString will be “10 hello"
-String thirdString = i + " " + helloString;
-System.out.println("thirdString = " + thirdString);

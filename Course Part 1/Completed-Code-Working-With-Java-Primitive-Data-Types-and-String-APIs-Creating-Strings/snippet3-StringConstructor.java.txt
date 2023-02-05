@@ -1,6 +1,0 @@
-offset = 2;
- length = 9;
- // Create a String from the byte array, c- k
- String byteString2 = new String(bytes, offset, length,
-         java.nio.charset.StandardCharsets.ISO_8859_1);
- System.out.println("byteString2 = " + byteString2);

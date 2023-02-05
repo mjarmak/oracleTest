@@ -1,6 +1,0 @@
-// Following code demonstrates: public String[] split(String regex)
-// First make sure sentence is delimited by a space to test
-sentence = String.join(" ", wordList);
-// now split using space
-String[] splitWords = sentence.split(" ");
-System.out.println(Arrays.toString(splitWords));

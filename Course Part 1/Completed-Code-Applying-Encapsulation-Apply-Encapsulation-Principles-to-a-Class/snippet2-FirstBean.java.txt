@@ -1,9 +1,0 @@
-private int myOwnVariable;
- 
-public int getFieldAlias() {
-    return myOwnVariable;
-}
- 
-public void setFieldAlias(int fieldAlias) {
-    this.myOwnVariable = fieldAlias;
-}

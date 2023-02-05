@@ -1,3 +1,0 @@
-System.out.println("\n------------- List.equals ------------");
-System.out.println(" (firstList.equals(secondList)) = "
-        + firstList.equals(secondList));

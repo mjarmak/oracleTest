@@ -1,4 +1,0 @@
-// Create a subclass of InitializerExceptions
-class SubClass extends InitializerExceptions {
- 
-}

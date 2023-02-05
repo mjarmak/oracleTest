@@ -1,7 +1,0 @@
-try {
-    SubClass c = new SubClass();
-    c.methodSuperClass();
- 
-} catch (CustomException e) {
- 
-}

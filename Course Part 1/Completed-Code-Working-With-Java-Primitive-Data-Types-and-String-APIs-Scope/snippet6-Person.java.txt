@@ -1,2 +1,0 @@
-}
-ageClassification = ageType + ageClassification;

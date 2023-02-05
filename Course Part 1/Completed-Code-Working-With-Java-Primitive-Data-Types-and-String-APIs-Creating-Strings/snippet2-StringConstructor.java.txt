@@ -1,5 +1,0 @@
-// Only want f-j now.
-offset = 5;
-int length = 5;
-String intString2 = new String(integers, offset, length);
-System.out.println("intString2 = " + intString2);

@@ -1,5 +1,0 @@
-// Note that creating a 'substring' which is same as string
-// does NOT create a new object.
-stringReplaced = stringOriginal.substring(0, stringOriginal.length());
-System.out.println("9.  stringOriginal==stringReplaced = " +
-        (stringOriginal == stringReplaced));

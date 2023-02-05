@@ -1,3 +1,0 @@
-String subString = sb.substring(0, 5);
-System.out.println("subString = " + subString);
-System.out.println(sb);

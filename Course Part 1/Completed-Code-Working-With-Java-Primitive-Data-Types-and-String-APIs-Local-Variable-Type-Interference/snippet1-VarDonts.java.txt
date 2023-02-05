@@ -1,5 +1,0 @@
-// Invalid - Static class variables cannot be declared with var
-static var classVariable = 10;
- 
-// Invalid - class instance variables cannot be declared with var
-var instanceVariable = 20; 

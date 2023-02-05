@@ -1,3 +1,0 @@
-public static void testIt(List<BaseClass> baseListParameter) {
-    System.out.println(baseListParameter);
-}
